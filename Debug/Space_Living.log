@@ -1,0 +1,63 @@
+﻿  AnimatedObject.cpp
+d:\projects\space_living\space_living\texture.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Boss.cpp
+d:\projects\space_living\space_living\texture.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Calculate.cpp
+d:\projects\space_living\space_living\calculate.h(3): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Character.cpp
+d:\projects\space_living\space_living\texture.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  ControllerManager.cpp
+  FontDialogBox.cpp
+d:\projects\space_living\space_living\fontdialogbox.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Door.cpp
+d:\projects\space_living\space_living\door.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  DroppedObject.cpp
+d:\projects\space_living\space_living\texture.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Enemy.cpp
+d:\projects\space_living\space_living\texture.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Enums.cpp
+  EquipInventory.cpp
+d:\projects\space_living\space_living\equipinventory.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  ErrorManager.cpp
+  Font.cpp
+d:\projects\space_living\space_living\font.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  GameInfoManager.cpp
+d:\projects\space_living\space_living\gameinfomanager.h(3): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Globals.cpp
+  Grid.cpp
+d:\projects\space_living\space_living\grid.h(13): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  HUD.cpp
+d:\projects\space_living\space_living\font.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Inventory.cpp
+d:\projects\space_living\space_living\inventory.h(3): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  InventoryItem.cpp
+d:\projects\space_living\space_living\inventoryitem.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Level.cpp
+d:\projects\space_living\space_living\font.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Generating Code...
+  Compiling...
+  LootTable.cpp
+d:\projects\space_living\space_living\loottable.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  main.cpp
+d:\projects\space_living\space_living\main.cpp(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  MenuSelector.cpp
+d:\projects\space_living\space_living\texture.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  OpenGL.h
+d:\projects\space_living\space_living\opengl.h(4): fatal error C1083: Cannot open include file: 'GL/freeglut.h': No such file or directory
+  Player.cpp
+d:\projects\space_living\space_living\player.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Projectile.cpp
+d:\projects\space_living\space_living\projectile.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  SolidObject.cpp
+d:\projects\space_living\space_living\texture.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  SpawnPoint.cpp
+d:\projects\space_living\space_living\spawnpoint.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  ScreenManager.cpp
+d:\projects\space_living\space_living\texture.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Texture.cpp
+d:\projects\space_living\space_living\texture.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Tile.cpp
+d:\projects\space_living\space_living\tile.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Timer.cpp
+d:\projects\space_living\space_living\timer.h(2): fatal error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Generating Code...

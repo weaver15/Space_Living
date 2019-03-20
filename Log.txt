@@ -1,0 +1,898 @@
+3/18/18
+I've been working on a lot of things and not updating this. Mostly cleaning up code and working on packaging it up to send with resumes. 
+
+2/21/18
+Changed spawning to be in 30 second waves by 3's. I can change this later to be anything.
+
+2/14/18
+Started the dialogue system. I should probably be working more on making this fun to play first. 
+
+2/13/18
+Moved the last of the xml loading methods. I need to do a little clean up before all xml loading is taken out of level class.
+
+Cleaned up loading a little. On to Dialog or breadcrumb AI path finding. I think I would sleep better if I was just done with
+the path finding crap, it drives me crazy.
+
+2/12/18
+Almost all of the loading methods are moved, I will do one pass to change how things are loaded then I'll be done
+moving all these loading methods
+
+2/11/18
+Moved more of the loading methods from the level class to the info manager. I want to move a lot of 
+stuff from the level to other managers such as textures should be handled by their manager and level could
+just call draw. 
+
+1/31/18
+I want to start cleaning stuff up, starting with the enemy class
+
+1/30/18
+more work on enemy collision, works a little bit
+
+1/29/18
+Working on enemies not standing on top of each other. 
+ 
+1/28/18
+upped the difficulty to try to make it more fun to play. I need to get this to a point that its fun.
+
+1/24/18
+Worked on plane edit. Sort of fixed the saving method to save the right size, needs a little more work.
+it saves the grid size times two for a row to account for  a number then comma but two digit numbers
+mess that up. 
+
+Cleaning up the saving method for plane edit
+
+1/23/18
+Frames per seconds capped
+
+1/9/18
+fixing searching to include doors, it seems like its an infinite loop right now
+
+1/8/18
+Search to include solid objects like doors
+
+1/7/18
+Removed the options option from the start screen until I can actually add something for it. 
+Enter to progress screens instead of any button.
+Added how to play description 
+Added use E to open doors to the controls page
+
+
+1/4/18
+Doors reset, I upped the search timer and reworked the timer object too. Seem a little better but I still think it is 
+calling the A* search too much. I want to call it  around every 2 seconds if i absolutely have to. It shouldn't cause 
+a noticeable lag though but it does. Something not right and I'm too scared to look at that code again :(
+
+I broke the Start and Exit menu because Megan said having Option there and not doing anything with it was 
+confusing. 
+
+12/28/17
+added more spawn points, moved boss key to a good location
+
+12/27/17
+Fixed spawn reset, fixed door collision, stop spawn points when they are too far away
+
+12/26/17
+Added a screen to show controls, credits and game over. Credits and game over don't show yet.
+The game state switches to game over when the player is no longer alive
+when the players health is 0 shows the game over scree, then goes to the star game screen where the level can begin again
+Added a Reset to level to reset the player, enemies, and spawns. Need to reset the boss and boss key. Fix the spawns
+because they don't spawn after reset
+
+
+12/19/17
+Taking the path from the spawn to the player, finding where the enemy fits in that path and setting that as
+the enemies path
+
+12/18/17
+Ive been working on the loading mostly. Made a GameInfo class for loading and will be
+used for saving in the future. There is still more to do with that but I need to work on something
+else and switched over to constructing a path from the spawn point that all enemies will walk on.
+
+Also encapsulation is kind useless when I'm the only one working on this so I'm removing that as I 
+see it. 
+
+12/7/2017
+I went to Cabo for a week. This week and previous few days I have been moving xml loading from Level to a 
+GameInfoManager I made to handle loading and saving. 
+
+11/19/17
+Moved the dropped item image to the tile map. Dropped items and boss key both draw
+Starting to set get methods to const
+I have a lot of methods I don't use, I'm cleaning that up too as I find them.
+
+11/17/17
+I did some work on the map editor now I'm back. Ive done a bad job logging what I've done.
+Drew the boss key for the door.
+Added dropped item texture to the import xml it was hard coded.
+Dialog box pops up with the door cost when the player is close to a door.
+
+
+8/29/17
+Worked on some distance stuff. I think I'm going to go back to map editor
+
+8/28/17
+Exit on the start screen exits, in the future it will need a confirmation screen. 
+Moved enums around a little, slowly cleaning things up
+
+7/20/17
+enter on start on the start screen starts the first level, small I know
+
+7/10/17
+W and S move the cursor, I need to re draw the screen
+
+7/7/17
+the start screen bmp is a different size than the screen and is stretched to it
+so finding a way to keep the cursor centered and under the correct object
+
+7/6/17
+Import screen options from game info
+Load options array
+made a screen options enum with Start, Options, Exit
+
+adjusting the menu selector class used in the inventory to be used for the cursor, it loads and draw just needs to draw in the right
+place and take input
+
+7/5/17
+Enter changes screen from start screen to level
+
+Drew temp cursor
+Made a options struct for Start, Options, Exit
+Made a Cursor class
+
+7/4/17
+start screen draws to the size of the screen
+
+6/29/17
+Got the start screen to draw
+
+6/28/17
+Start screen constructor, draw and update
+Moved some texture methods to the texture object from level
+removed not needed field from level
+
+6/27/17
+Switch on game state, update game state in updates 
+
+6/26/17
+Start Screen class, game state enum to control start screen, level, game over or credits
+
+6/20/17 - 6/23/17
+PlaneEdit
+-Clicking a button then the grid changes the tile to the image, sets the tile
+to the image type export too. Works well but the refresh after each click is
+noticeably slow for some reason? 
+
+6/19/17
+PlaneEdit
+-Panel with buttons
+
+6/18/17
+Made a mock start screen. 
+
+6/10/17-6/16/17
+Started working on a map editor called PlaneEdit for now. Right now it loads all white tiles, clicking them turns them black. 
+Save saves the tiles as either a 0 or 1 in the game info format. 
+
+5/5/17
+6:20 - 7
+Player collision with solid objects
+
+5/4/17
+6:20 - 7
+Solid object, solid manager, solid object texture and game info
+
+8-9:15
+Added solid objects to the level and they draw, need collision next
+
+5/3/17
+7:30 - 8, 8:40 - 9:15
+fixed horizontal doors
+tried to make the level a little better
+found a A* bug 
+
+4/24/17
+9-9:30
+I think I fixed the bug by blanking out the enemy path every time I set it.
+Set the drop chance for enemies so they don't drop items 100% of the time
+
+4/23/17
+9-9:30
+tried to fix a bug (didn't). It comes from killing an enemy and a new one spawning or the path be access on a dead one?
+
+4/22/17
+Added some debugging to enemy manager
+
+4/21/17
+threaded all of the enemy searching, i think it works?
+
+4/20/17
+Attempted to do threads, didn't work for enemies. I'll keep them in mind for somewhere else
+Started to outline the layout of the story
+
+4/13/17
+Cleaned up the enemy and enemy manager some...probably broke it
+
+4/10/17
+6:15 - 7
+Made movement speed an enum, removing more Hungarian notion, broke enemy search update into smaller methods,
+added enemy and enemy manager regions 
+
+4/9/17
+5:30 - 6
+Made black tiles impassable instead of no walls
+
+4/5/17
+8:30 - 9
+working on more efficient AI
+
+4/4/17
+8:30 - 10 pm
+working on if the enemy is within sight (a line between the player and enemy) of the player, don't A* just move to that location. It needs improvement but wasnt too bad for the first run.
+Decreased max enemies to 10
+
+
+4/3/17
+6:15 - 7
+Added a timer to enemies, works fine but still laggy with a lot of enemies on screen. Wanted to know if it was just debug build so I went through getting a release build, getting a sdl not installed error on run. Builds fine
+
+3/31/17
+6:15-7
+Slowed down the search rate but messed up and it only updates one. The timer needs to be attached to the enemy not enemy manager
+
+3/30/17
+6:20 - 7
+I didn't do much, just moved level update stuff around and planned on how to update each enemy
+
+8:30 - 9:20
+hooked up A* to spawning enemies....runs so slow haha, will have to update how often a* is updated
+
+3/29/17
+6:15 - 7
+Re-worked is passable to take into account current tile and next tile, it worked when ran on a regular unobstructed path. I'll see what it does with a wall in the way tonight
+
+8:30-9:15
+A* test worked! To celebrate I just cleaned up Level a little bit
+
+3/28/17
+A* search, my grid needs to include doors, discovered late last night that the problem was the enemy would never go to a tile with walls and my player was on a tile with walls.
+
+3/27/17
+I'm spending most of my time looking over this search, and thats probably what I'll always do
+
+3/26/2017
+8:30-9
+The neighbor method is messed up. If moving down the enemy can hit tiles with up walls, moving right they can hit tiles with left walls.
+I need to work out the get neighbor / is passable. 
+
+3/24/17
+A* will eventually get the enemy to the player so I switched to a priority grid and that works better but walls still get in the way
+If the enemy reaches the player its at 'goal' this will break the search
+
+3/16/17
+8-8:30
+Got the path finding sort of working, its not putting the right points though
+
+3/15/17
+8-10
+I took a break to play Persona 3 before Persona 5 comes out. I broke my heart not to be working on anything so I'm back.
+I hooked up the a* search to return a path and populate the enemies path but its not working so I'll step through that in the morning.
+3/6/17
+6:15 - 6:45
+More Enemy search update path finding. 
+
+3/5/17
+8-45 - 9:30
+path finding.
+
+3/1/17
+6:15-6:45
+Made a test enemy  to do path finding stuff
+
+9-9:30
+Tile quality of life methods, like getting the center location by grid location, search by grid location, an add to Enemy path queue 
+
+2/28/17
+Enemy path to follow
+
+2/27/17
+morning and night - kept working on grid, it draws and populates right. Time to start hooking up the search
+
+2/26/17
+8-8:40
+Populating grid location on tiles and wall list on grid
+
+2/23/17
+6:20 - 7
+Working on a grid class to store tiles and tile information and for the A* search
+
+2/22/17
+6:15-6:45
+Moved velocity calculate to calculation class 
+
+7-7:45
+Started work on A*, I am going to need some stuff.
+	-Graph for all the tiles
+		-needs a neighbors class
+	-Locations in that graph
+
+2/21/17
+6:15 - 6:40
+When player opens the boss door it checks for the key and activates the boss if opened
+
+9
+Really small changes, made the calculate class and solid object class
+
+2/19/17
+8-9
+Cleaned up Enemy, Player, Boss, Character a little bit.
+Changed Boss door to be handled with the door manager
+Can open boss door but needs to check if the player has the door key
+
+2/17/17
+6:15-7
+Updated the way doors are read in, boss door draws horizontal
+
+2/16/17
+6:15-6:45
+worked on rotating door, this isnt going to work, Ill have to draw it rotated
+
+9
+Re-Drew horizontal doors, its easier this way, I have to change the way the door texture is read in
+2/15/17
+6:15 - 7
+Started boss door, drew the texture, set the gameinfo, adjustments to player diagonal movement
+
+8 - 8:45
+Drawing boss door and collision with boss door...but that still needs work
+
+2/14/17
+8:30 - 9: 30
+Rotate player diagonally, clear projectiles when boss die
+
+2/13/17
+6:15-7
+Fixed boss firring projectils at player, re factored AnimatedObject
+
+9
+refactored Character class
+
+2/10/17
+6:15 - 6:40
+boss fired projectiles move towards player
+
+2/9/17
+6:15 - 7
+Boss fire projectile
+
+8
+Moved projectile manager to Character class
+
+2/8/17
+6:15-6:50
+Added projectile to boss, realized projectile class needed work so updated the fire process
+
+2/7/17
+6:30 - 7
+Rotate boss to look at player
+
+2/6/17
+6:15-7
+Updates to Animation Object Draw
+
+8:30- 8:50
+Projectiles die if they go off camera
+
+2/5/17
+9-9:30
+Move added draw to character class to do is alive checks on everything so I dont have to call it other places over and over
+
+2/2/17
+6:20 - 7
+I went on a unity hiatus but now I'm back
+Started working on adding a boss, made its own class
+
+8 - 8:45
+Boss is loaded in the game info and drawn, also touched up the texture a bit, I'd like him to be bigger
+
+1/12/17
+6:15 -
+Projectile collison with walls, enemy spawn location fixed
+
+1/11/2017
+6:15 - 7
+Fixed random numbers not being random by seeding srand, fixed weapons not geting unequiped and added to inventory, 
+added a level timer so I can start working on inc enemy spawn and difficulty
+
+8ish
+Added enemy collision with walls
+
+1/10/2017
+like 15 mins
+Update the projectile manager when a weapon is equiped
+
+1/9/17
+8:30-9
+Taking damage into account, need to set damage to weapons then update the projectile manager with that damange. 
+
+1/8/17
+6:48 - 7:28
+Adding more doors and change texture to open when open
+
+1/7/2017
+6:30 - 8
+Cleaned up import, added spawn loaction info to game info
+
+1/5/2017
+6:10 - 7
+Door collision, open door texture, E to open doors
+
+1/4/2017
+6:15 - 6:45
+Added a spawn bool to turn off spawning, changed hud color to green
+
+8:45 - 9:15
+Updated doors: added a new door to the tile texture, updated the xml info
+
+Next add door collision, draw open door, check that open door still works
+
+1/3/2017
+6-7
+GameInfo update, there is a lot to put in the xml :(
+7- 
+This gameinfo...this gameinfo. At least its getting done. 
+1/2/2017
+12-2ish
+Tiles all have wall locations that get checked. Its working fine for all tiles with 1 or 2 walls, if I ever have a 3 wall tile ill have to update.
+I would like to clean up for the rest of the day.
+7:30
+Putting hard coded values into GameInfo
+
+12/28/2016
+8-8:45
+Hard coded tiles with wall locations to see how it looks. Going to do some touch ups then  put them in the game info xml and
+have them imported
+
+12/23/2016 - 12/27/2016
+Drew tiles with walls, did a little each day during Christmass weekend
+
+12/21/2016
+8-8:30
+put the first level of tiles in. Looks great!
+
+12/20/2016
+7-8
+Planed the first level on paper
+
+12/19/2016
+7-7:45
+Set Tile location
+
+12/18/2016
+8 - 8:30
+Worked more on tiles, all that needs to been done is effectivly setting their location
+
+12/16/2016
+5:45
+I strayed to do other things and it didn't feel right so I am back. Tonight I am going to start on tileing
+
+11/22/2016
+I fixed the equiping and unequiping trouble! Inventory looks really good now!
+
+11/21/2016
+I wasted my night trying to find a way to share between my mac and windows, I dont see this easily happending
+I would like to set up cmake to work with my visual studios sln, then I could work on one thing on my mac and completely other things
+on windows then merge once a week? its archaic but for what little i would do on mac i think it would work
+
+11/20/2016
+Font text box is drawing better, to update isnt in the draw method
+value for inventory is messed up
+Fixed images being drawn with their background not being removed
+
+11/18/2016
+I did something this day but I dont rember what it was
+
+11/17/2016
+I tried to make gRender global and it broke everything
+
+11/16/2016
+8-9
+Everything is working smooth with the display text box now.
+I updated the comments in the Player class
+update the font dialog box to take in a string not an int
+Next: I need to change the MoveStatBox out of the draw method, there too much going on for it to be there...I'll have to make gRender and camera global, that wont be so bad I think...I hope
+
+11/15/2016
+8-8:30
+I have the display text following the display box with the selector moves, but my set location is messed up, for some reason its messing with the text size?
+
+11/14/2016
+8-9
+I have coded myself into a hard place. I need camra but its impossilble to get it in this location so I have to make it global. I going to make gRender global too
+because holy fuck I'm tire of needing it an not having it. FUCK FUCK FUCK!!!!
+
+11/13/2016
+8- 9
+Refactor Sunday!
+Putting a bunch of classes into one cpp was a bad idea, I broke inventory up
+made a base dialog box class so I could use it in more places than just inventory
+cleaned up inventory display box drawing and moving
+
+11/10/2016
+8 - 8:45
+More work on the inventory stat box, its a real pain. I need to re-write a lot of this...
+
+11/9/2016
+7: 30 - 8:30
+Added box to display text of selected item in inventory
+added a class to inventory for text display
+all equipped items have a number and it gets update on equiped 
+Inventory display text is close to being done
+
+11/8/2016
+6:30 - 7:30
+Adding font to equiped item
+Have it showing for Head and refreshing on equip
+Had to update where inventory items are drawn
+
+
+
+11/7/2016
+7-8:15
+I am going to start work on displaying inventory information
+Added a space for equiped item text
+Moved inventory down a little it was hitting hp text
+
+11/6/2016
+8-9
+Played around with Krita as a drawing tool. I like it for the most part but its missing a way to see the location of stuff so I may use it and 
+paint.Net together or switch again.
+
+11/3/2016
+8:30 - 9
+Started drawing a boss for the end of the level. Im going to switch from Paint.Net to a different drawing platform, paint.net just blows
+
+11/1/2016
+8-8:30
+Updated the Charater class to have damage and get damage on attack, works only for enemies right now
+Added a enemy attack type enum for melee or ranged attack type
+Moved some of the global enums, i will slowly move them all
+
+10/31/2016
+9-10:30
+When an enemy (all melee for now) collides with the player the players heal is deducted and the enemy is moved back
+Hud updates with the new player hitpoints
+Enemies now inherite from the Character class
+
+
+10/30/2016
+8:30 - 9:10
+Set player hit points and player energy at level load. 
+
+
+10/24/2016
+8 - 8:40
+Opening a door updates player energy count
+health lable and 0 draw
+HUD enum tag
+
+10/20/2016
+8-9
+Hud draw energy and energy count, the hud updates energy count when an enemy is killed, needs to be updated when a door is opened
+10/19/2016
+8-9
+Created a Font Class and a HUD class, add fonts inside of the hud
+
+10/18/2016
+Fixed the text problem, the render method was messed up so for now I have a renderText method in the texture class to render text
+
+Tomorrow I would like to have text show up at the same time as the level
+
+10/17/2016
+The problem with my font is the texture class, I will have to look over it but the AC is out at the apartment and its too hot to be in the living room tonigh.
+
+10/16/2016
+Note: I have been sick the past few days so I havn't done mubh but I feel better now so back to it!
+7:45 - 9:00
+Work on loading font to the screen, it still needs work. Something is wrong with the way its trying to render, shouldnt be too hard to fix tomorrow
+
+10/12/2016
+-Starting on writing font to the screen
+
+10/11/2016
+-Started on a character class. Object that is animated, has collision, moves, has health
+
+10/10/2016
+7:30- 8:00
+-Opening a door checks the cost, makes sure the player has enough energy
+-After the door is opend the players energy is deducted
+
+Next:
+	replace closed door texture with open door texture
+
+
+10/9/2016
+Started work or E to open doors. Now it opens all doors.
+
+Next:
+	Check an area around the door to open it
+	deduct energy from player energy
+
+10/8/2016
+7:00 - 8
+-Set enemies to chase player
+-Removed an enemy constructor that was useless
+-Can shoot all directions
+-Removed a projectile constructor that was useless
+-projectiles fire faster
+-Started work on energy count, incs when enemies are kill
+
+10/05/2016
+8:30-9:15
+A little error checking for some texture methods.
+Cleaned up some of Animate Object
+
+10/04/2016
+Played around with GarageBand
+
+10/03/2016
+8:45 - 9:15
+Started more logging and error logging. Most likely what I will be doing all week. Better to start while it is still small
+
+10/2/2016
+Error logging
+Added tags to animated object
+
+next:
+start logging where errors can happen
+print where the program is (successful loads etc)
+all object need to be assigned a tag
+
+9/29/2016
+Unequp item in a slot getting equipped to. Just the basics, not 100% that this is working, I need different colored items
+
+9/28/2016
+8:30 - 9:20
+Things weren't getting equipped to where I wanted them to be so I fixed that.
+
+Next: Unequiping equiped items (When equiping for now)
+
+9/27/2016
+8:00 - 9:00
+Dropped items now have random stats, player has stats, equiping an item addes to the player stats
+Added a weapon type enum
+added a armor type enum
+inventory type enum is no Weapon or Armor
+Random stats for items is set at pick up and incread buy Level.CurrentLevel
+
+Next:
+When replaceing an equiped item the old one should be added back to inventory
+and stats deducted from player; 
+
+9/26/2016
+I spent all night trying to get this to run on my mac, I gave up but I put about two hours into it
+
+9/25/2016
+Very small amount of work today, made an error manager and added an ErrorLog.txt to the folder
+
+Next: Start wroking on error logging and continue item work
+
+9/24/2016
+8:15- 9
+Items are equiping the the right slots. I broke out a method. I'm checking loops to not do uneed things.
+
+Next:
+I need to add more items, set stats on items.
+
+
+9/22/2016
+fixed random item spawn so that all items have an equal chance
+
+9/21/2016
+8:30 - 9:40
+Started the loot table, its dropping random items but seems to be 0-2 instead of 0-3...adding 1 throws an out of bounds
+
+
+9/20/2016
+8:45 -9:45
+Reading in the slots for equipment inventory
+Setting equipped inventory in proper location, well atleast for weapon 1 slot. I need to add the other items to drop befor testing them for the 
+other slots
+
+Next: have over items drop, start a loot table
+
+9/19/2016
+15 mins
+
+Just to say I did something today I mapped out the slot locations for the equipment texture, this way they can be read in
+then used to place the item in the right locations.
+
+Tomorrow I would like to read them in and have them placing items correctly
+
+9/14/2016
+I have this great idea, before finishing one game I'm going to work on two at the same time. So they are both finished together 
+and reference eachother. The other game is Pilgrims' Guilt. It will be made in Unity.
+
+7:30 - 8:30 (PG)
+Made background prefabs, made a door texture
+
+9 - 9:30 (SL)
+Equipped Weapon still isn't going where it shoulg but its closer
+
+9/10/2016
+7 - 7:30
+Art - Adding detil to the background of the first level 
+
+9/8/2016
+8:20 - 9:20
+My resto druid is really picking up...I'm doing bg's to get experience. Oh hey didn't see you there...
+Added:
+	Can equip items. They just need to draw correctly
+	
+
+
+9/7/2016
+8:20 - 9:20
+Oh god I haven't worked on this in a week! I have been doing Unity tutorials though. A playing a lot of WOW haha.
+I am starting work on the equipment menu where you see all that you have equiped.
+
+Added:
+	Added the equipment inventoy.
+	Draws the equipment Inventy
+	
+Next:
+	Draw Equiped Items in equipment inventory
+
+
+
+8/29/2016
+9 - 9:32
+
+Fixed:
+	Deleted managers, cleaned up naming
+
+
+8/24/2016
+8:30 - 9:12
+Added:
+	I made a draw that uses SDL_Textures int Animated Object so I can pass in a stretched texture and use that
+Fixed:
+	Doors now have proper collision and draw correctly
+	
+8/23/2016
+8:16 - 9:03
+I would like to start on doors tonight. Im going to atleast get a closed door and collision tonight
+
+Added:
+	Small door is drawing, manager is set up, collision is sort of working
+	
+Next:
+	Door texture needs to be stretched
+	Collision checks should just be SDL rects not the whole class
+	
+Note:
+	I put the door manager in the door class, feels a little cleaner
+
+8/22/2016
+8:20 - 9:45
+More clean up of var names and get methods
+Fixed:
+	When pressing enther it was removing the wrong item
+	
+Added:
+	Now if there is a gap in the inventory it will fill that gap with the next time picked up
+
+
+8/19/2016
+8:30 - 9:30
+Doing clean up all weekend
+	-Renaming vars in all classes
+		-So far just Animated Object
+	-Looking to reduce redundancy
+	-Remove hard coded values
+
+Note:
+I need to make sure everything is cleaned up before I start to do anything else,
+to avoid future bugs and debt
+
+
+8/18/2016
+9:30 - 10
+I dont want you to think I'm slacking. I have been working more on unity and unreal lateley
+Tonight I started a clean up, I hated my naming convention so I'm starting to change it. I noticed lots of redundant code
+so Im changing that. Such as check collision is the same for everything so that needs to be moved to Animated Object class
+
+8/17/2016
+8:30 - 8:45
+There are not enought hours in the day. Only had time to add the door class, I'll start setting it up next time
+
+8/16/2016
+8:30 - 9
+Verticle wall are reading in fine
+next:
+Door object I can toggle to open or close
+
+8/15/2016
+8:40 - 9:25
+Horizontal walls read in fine now, they are just untextured SDL_Rect...this will work for my first game
+Next:
+Read and applay vert walls
+
+8/14/2016
+8:30 pm - 10:17 pm
+Working on listing all the walls that need to be added
+Started to parse, wall coords are still 0, probably just a xml read in problem somewhere
+
+8/11/2016
+7:41pm - 8:36 pm
+Added openGL and freeglut to the project
+Spent the rest of the time researching how to repeat the wall texture (didnt exactly figure it out)
+
+8/9/2016 
+8:11pm - 9pm
+Added WallManager class
+added wall collision for player
+removed event passing to player update
+
+Next:
+	start maping out where the walls will be for level 1
+
+8/8/2016 
+8:27 pm - 9:46 pm
+
+Starting with drawing a wall texture
+Added dimenstions to GameInfo
+Made a Wall class and loaded wall information
+drew a temp wall and it worked but I dont like how small it is
+
+Fixed:
+	Added an animated object constructure that will default row col to 1,1
+	Changed a few places where nodes where getting created to be created at the last possible moment
+	
+Next:
+	Work on walls, collision and size.
+	Wall manager
+
+Note: I watched a lot of the olympics tonight
+
+8/7/2016 
+
+6:45 pm - 8:12 pm
+Fixed:
+	Renamed LevelInfo to GameInfo to keep all game info in one file
+	Menu selector wasnt reflecting input until inventory was turned off and redrew, fixed that
+	Added initialize values for projectiles
+	Added initialize values for inventory menu
+Next:
+	Start on walls
+	
+
+8/4/2016 
+
+6:30 am - I don't like the look of most of my code. A lot of it was just thrown together to get something to work.
+I'm going to start cleaning up a class a day in addition to making additions. Todays clean up with start
+with the player class. 
+8:40 pm - 9:30 pm
+-Fixed:
+	Projectiles were subtracting from the right spot when moving out of bounds, fixed the pointer problem there
+	Move fire projectile logic from the player to projectile manager to clean up a litte bit.
+	Discoved that enemies stop spawning because they are just set to walk left, and they have no out of bounds, I dont think
+		this needs any work because eventually they wont walk out of bounds.
+-Next:
+	Add a wall
+	add a secod xml for texture info thats not level dependent
+	fix the initializes for inventor and projectile in player
+		add texture info for both
+		read it in
+		send it to the player to init both
+
+
+8/3/2016 
+8:00 - 9:18
+-Fixed:
+	Inventory item draw location
+	Changed draw order so Player is usually on top
+	Moved set inventory locations to be called once instead of ever draw cycle
+	Increased the max number of items dropped on screen
+-Next:
+	Bug: bullets and enemies stop shooting/fireing after a while
+

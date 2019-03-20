@@ -1,0 +1,61 @@
+﻿  AnimatedObject.cpp
+  Boss.cpp
+  Calculate.cpp
+  Character.cpp
+  FontDialogBox.cpp
+  Door.cpp
+  DroppedObject.cpp
+DroppedObject.cpp(97): warning C4018: '<': signed/unsigned mismatch
+  Enemy.cpp
+Enemy.cpp(191): warning C4018: '<': signed/unsigned mismatch
+Enemy.cpp(277): warning C4018: '<': signed/unsigned mismatch
+Enemy.cpp(292): warning C4018: '<': signed/unsigned mismatch
+  Enums.cpp
+  EquipInventory.cpp
+EquipInventory.cpp(19): warning C4474: 'printf' : too many arguments passed for format string
+  EquipInventory.cpp(19): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  ErrorManager.cpp
+  Font.cpp
+Font.cpp(78): warning C4018: '<': signed/unsigned mismatch
+Font.cpp(92): warning C4018: '<': signed/unsigned mismatch
+  GameInfoManager.cpp
+  Globals.cpp
+  Grid.cpp
+  HUD.cpp
+  Inventory.cpp
+Inventory.cpp(32): warning C4474: 'printf' : too many arguments passed for format string
+  Inventory.cpp(32): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+Inventory.cpp(151): warning C4018: '<': signed/unsigned mismatch
+  InventoryItem.cpp
+  Level.cpp
+Level.cpp(33): warning C4101: 'n': unreferenced local variable
+Level.cpp(124): warning C4101: 'i': unreferenced local variable
+Level.cpp(408): warning C4101: 'i': unreferenced local variable
+  LootTable.cpp
+  Compiling...
+  main.cpp
+main.cpp(209): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  MenuSelector.cpp
+  OpenGL.h
+  Player.cpp
+  Projectile.cpp
+Projectile.cpp(65): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+Projectile.cpp(66): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  pugixml.cpp
+  SolidObject.cpp
+SolidObject.cpp(56): warning C4018: '<': signed/unsigned mismatch
+  SpawnPoint.cpp
+  ScreenManager.cpp
+ScreenManager.cpp(214): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
+ScreenManager.cpp(214): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+ScreenManager.cpp(219): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Texture.cpp
+  Tile.cpp
+  Timer.cpp
+  Generating code
+d:\games\spaceliving\space_living\enemy.cpp(376): warning C4715: 'EnemyManager::FirstDeadEnemy': not all control paths return a value
+d:\games\spaceliving\space_living\droppedobject.cpp(102): warning C4715: 'DroppedObjectManager::FirstDeadDroppedObject': not all control paths return a value
+d:\games\spaceliving\space_living\projectile.cpp(152): warning C4715: 'ProjectileManager::FirstDeadProjectile': not all control paths return a value
+  All 2514 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Space_Living.vcxproj -> D:\Games\SpaceLiving\Release\Space_Living.exe

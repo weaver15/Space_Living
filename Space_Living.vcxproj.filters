@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Inventory">
+      <UniqueIdentifier>{94303cf5-1046-4f52-a35d-0c38e3eefbac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Level">
+      <UniqueIdentifier>{291279ff-3692-4ab2-811e-cb76c59910ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tools">
+      <UniqueIdentifier>{0ffe4246-efeb-454b-82b7-eb146a52ede0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BaseObject">
+      <UniqueIdentifier>{24d87e2b-313b-4977-a637-c0a05ae5b318}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Enemy">
+      <UniqueIdentifier>{58fe1cfd-ea5f-457a-8b17-689f063372fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Player">
+      <UniqueIdentifier>{f285e322-2356-4fef-b622-7e29fdb21f52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Inventory">
+      <UniqueIdentifier>{6c416cf3-eb54-48a9-ac76-ce5fc7fb4ca7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Level">
+      <UniqueIdentifier>{24c12c46-fb6f-4b99-9a4b-8a4019b6fddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BaseObject">
+      <UniqueIdentifier>{c20599c3-c3c0-4139-927a-3b20b2d31e15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tools">
+      <UniqueIdentifier>{7aade391-e7ca-4990-af0c-e27f17e85375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Player">
+      <UniqueIdentifier>{edb40e49-71b4-4def-8e83-c8ec5185242d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Enemy">
+      <UniqueIdentifier>{f89bfea1-333d-47ef-a2b4-c0f515df49c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pugixml">
+      <UniqueIdentifier>{8e33019b-6ecf-4b44-9a22-ae8c1ba18802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\HUD">
+      <UniqueIdentifier>{253daebc-c062-4152-bdc7-1743b4e7031e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HUD">
+      <UniqueIdentifier>{3b3ef349-2b34-4dab-9ced-4ac6237a27a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Screen">
+      <UniqueIdentifier>{0159da77-f44c-4d38-a6cb-4028efbb531c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Screen">
+      <UniqueIdentifier>{a6da7608-a631-49ce-baf8-dfab8809d3bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>Source Files\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryItem.cpp">
+      <Filter>Source Files\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuSelector.cpp">
+      <Filter>Source Files\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimatedObject.cpp">
+      <Filter>Source Files\BaseObject</Filter>
+    </ClCompile>
+    <ClCompile Include="DroppedObject.cpp">
+      <Filter>Source Files\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Enums.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Globals.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files\BaseObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>Source Files\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Source Files\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="pugixml\pugixml.cpp">
+      <Filter>pugixml</Filter>
+    </ClCompile>
+    <ClCompile Include="Door.cpp">
+      <Filter>Source Files\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="LootTable.cpp">
+      <Filter>Source Files\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorManager.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL.h">
+      <Filter>Header Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Source Files\BaseObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>Source Files\BaseObject</Filter>
+    </ClCompile>
+    <ClCompile Include="HUD.cpp">
+      <Filter>Source Files\HUD</Filter>
+    </ClCompile>
+    <ClCompile Include="FontDialogBox.cpp">
+      <Filter>Source Files\BaseObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Source Files\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawnPoint.cpp">
+      <Filter>Source Files\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss.cpp">
+      <Filter>Source Files\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="SolidObject.cpp">
+      <Filter>Source Files\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Calculate.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Source Files\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="EquipInventory.cpp">
+      <Filter>Source Files\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="GameInfoManager.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenManager.cpp">
+      <Filter>Source Files\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllerManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Inventory.h">
+      <Filter>Header Files\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryItem.h">
+      <Filter>Header Files\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuSelector.h">
+      <Filter>Header Files\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="DroppedObject.h">
+      <Filter>Header Files\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Header Files\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Header Files\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimatedObject.h">
+      <Filter>Header Files\BaseObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files\BaseObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>Header Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="pugixml\pugiconfig.hpp">
+      <Filter>pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="pugixml\pugixml.hpp">
+      <Filter>pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="Door.h">
+      <Filter>Header Files\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="LootTable.h">
+      <Filter>Header Files\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorManager.h">
+      <Filter>Header Files\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Header Files\BaseObject</Filter>
+    </ClInclude>
+    <ClInclude Include="HUD.h">
+      <Filter>Header Files\HUD</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>Header Files\BaseObject</Filter>
+    </ClInclude>
+    <ClInclude Include="FontDialogBox.h">
+      <Filter>Header Files\BaseObject</Filter>
+    </ClInclude>
+    <ClInclude Include="EquipInventory.h">
+      <Filter>Header Files\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.h">
+      <Filter>Header Files\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnPoint.h">
+      <Filter>Header Files\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss.h">
+      <Filter>Header Files\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="SolidObject.h">
+      <Filter>Header Files\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Calculate.h">
+      <Filter>Header Files\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Header Files\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInfoManager.h">
+      <Filter>Header Files\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenManager.h">
+      <Filter>Header Files\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
