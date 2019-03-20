@@ -1,3 +1,8 @@
+3//19/19
+It has been one year and a day since I have worked on this. It never got me a job! I don't think anyone ever saw it.
+I'm coming back to it now just to keep sharp and have a side project. I have updated all the libraries and have 
+the git setup fixed.
+
 3/18/18
 I've been working on a lot of things and not updating this. Mostly cleaning up code and working on packaging it up to send with resumes. 
 
