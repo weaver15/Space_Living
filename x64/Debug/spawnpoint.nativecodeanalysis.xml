@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>grid.h</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>std::hash&lt;std::tuple&lt;int,int&gt; &gt;::()</FUNCTION>
+    <DECORATED>??R?$hash@V?$tuple@HH@std@@@std@@QEBA_KAEBV?$tuple@HH@1@@Z</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>grid.h</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>std::hash&lt;std::tuple&lt;int,int&gt; &gt;::()</FUNCTION>
+    <DECORATED>??R?$hash@V?$tuple@HH@std@@@std@@QEBA_KAEBV?$tuple@HH@1@@Z</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>spawnpoint.cpp</FILENAME>
+      <LINE>4</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'SpawnPoint::Id' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>SpawnPoint::{ctor}</FUNCTION>
+    <DECORATED>??0SpawnPoint@@QEAA@XZ</DECORATED>
+    <FUNCLINE>4</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>spawnpoint.cpp</FILENAME>
+      <LINE>13</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'SpawnPoint::Id' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>SpawnPoint::{ctor}</FUNCTION>
+    <DECORATED>??0SpawnPoint@@QEAA@USDL_Rect@@0HHUSDL_Point@@@Z</DECORATED>
+    <FUNCLINE>13</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

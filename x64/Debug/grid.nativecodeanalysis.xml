@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>grid.h</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>std::hash&lt;std::tuple&lt;int,int&gt; &gt;::()</FUNCTION>
+    <DECORATED>??R?$hash@V?$tuple@HH@std@@@std@@QEBA_KAEBV?$tuple@HH@1@@Z</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>grid.h</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>std::hash&lt;std::tuple&lt;int,int&gt; &gt;::()</FUNCTION>
+    <DECORATED>??R?$hash@V?$tuple@HH@std@@@std@@QEBA_KAEBV?$tuple@HH@1@@Z</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>grid.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Grid::Height' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Grid::{ctor}</FUNCTION>
+    <DECORATED>??0Grid@@QEAA@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>grid.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Grid::Width' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Grid::{ctor}</FUNCTION>
+    <DECORATED>??0Grid@@QEAA@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>grid.cpp</FILENAME>
+      <LINE>119</LINE>
+      <COLUMN>21</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>Grid::Heuristic</FUNCTION>
+    <DECORATED>?Heuristic@Grid@@AEAANV?$tuple@HH@std@@0@Z</DECORATED>
+    <FUNCLINE>114</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

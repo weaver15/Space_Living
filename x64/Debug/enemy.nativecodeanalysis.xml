@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>grid.h</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>std::hash&lt;std::tuple&lt;int,int&gt; &gt;::()</FUNCTION>
+    <DECORATED>??R?$hash@V?$tuple@HH@std@@@std@@QEBA_KAEBV?$tuple@HH@1@@Z</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>grid.h</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>std::hash&lt;std::tuple&lt;int,int&gt; &gt;::()</FUNCTION>
+    <DECORATED>??R?$hash@V?$tuple@HH@std@@@std@@QEBA_KAEBV?$tuple@HH@1@@Z</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>enemy.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Enemy::AttackType' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Enemy::{ctor}</FUNCTION>
+    <DECORATED>??0Enemy@@QEAA@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>enemy.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Enemy::Destination' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Enemy::{ctor}</FUNCTION>
+    <DECORATED>??0Enemy@@QEAA@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>enemy.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Enemy::Id' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Enemy::{ctor}</FUNCTION>
+    <DECORATED>??0Enemy@@QEAA@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>enemy.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Enemy::Energy' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Enemy::{ctor}</FUNCTION>
+    <DECORATED>??0Enemy@@QEAA@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>enemy.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Enemy::ParentSpawn' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Enemy::{ctor}</FUNCTION>
+    <DECORATED>??0Enemy@@QEAA@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>enemy.cpp</FILENAME>
+      <LINE>11</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Enemy::Destination' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Enemy::{ctor}</FUNCTION>
+    <DECORATED>??0Enemy@@QEAA@UEnemyDetails@@@Z</DECORATED>
+    <FUNCLINE>11</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>enemy.cpp</FILENAME>
+      <LINE>172</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'EnemyManager::AliveEnemies' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>EnemyManager::{ctor}</FUNCTION>
+    <DECORATED>??0EnemyManager@@QEAA@XZ</DECORATED>
+    <FUNCLINE>172</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>enemy.cpp</FILENAME>
+      <LINE>172</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'EnemyManager::LastDeadEnemiesEnergy' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>EnemyManager::{ctor}</FUNCTION>
+    <DECORATED>??0EnemyManager@@QEAA@XZ</DECORATED>
+    <FUNCLINE>172</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>enemy.cpp</FILENAME>
+      <LINE>172</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'EnemyManager::LastItemDrop' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>EnemyManager::{ctor}</FUNCTION>
+    <DECORATED>??0EnemyManager@@QEAA@XZ</DECORATED>
+    <FUNCLINE>172</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>enemy.cpp</FILENAME>
+      <LINE>178</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'EnemyManager::LastDeadEnemiesEnergy' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>EnemyManager::{ctor}</FUNCTION>
+    <DECORATED>??0EnemyManager@@QEAA@_K@Z</DECORATED>
+    <FUNCLINE>178</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>enemy.cpp</FILENAME>
+      <LINE>178</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'EnemyManager::LastItemDrop' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>EnemyManager::{ctor}</FUNCTION>
+    <DECORATED>??0EnemyManager@@QEAA@_K@Z</DECORATED>
+    <FUNCLINE>178</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

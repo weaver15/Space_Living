@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>font.h</FILENAME>
+      <LINE>19</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Text::Location' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Text::{ctor}</FUNCTION>
+    <DECORATED>??0Text@@QEAA@XZ</DECORATED>
+    <FUNCLINE>19</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>font.h</FILENAME>
+      <LINE>19</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Text::Texture' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Text::{ctor}</FUNCTION>
+    <DECORATED>??0Text@@QEAA@XZ</DECORATED>
+    <FUNCLINE>19</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

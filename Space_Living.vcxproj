@@ -23,7 +23,7 @@
     <ClCompile Include="Boss.cpp" />
     <ClCompile Include="Calculate.cpp" />
     <ClCompile Include="Character.cpp" />
-    <ClCompile Include="ControllerManager.cpp" />
+    <ClCompile Include="Controller.cpp" />
     <ClCompile Include="FontDialogBox.cpp" />
     <ClCompile Include="Door.cpp" />
     <ClCompile Include="DroppedObject.cpp" />
@@ -58,7 +58,7 @@
     <ClInclude Include="Boss.h" />
     <ClInclude Include="Calculate.h" />
     <ClInclude Include="Character.h" />
-    <ClInclude Include="ControllerManager.h" />
+    <ClInclude Include="Controller.h" />
     <ClInclude Include="FontDialogBox.h" />
     <ClInclude Include="Door.h" />
     <ClInclude Include="DroppedObject.h" />
@@ -136,8 +136,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>D:\Games\SpaceLiving\vs_dev_lib\SDL2_ttf-2.0.14\include;D:\Games\SpaceLiving\Space_Living\freeglut\include;D:\Games\SpaceLiving\vs_dev_lib\SDL2_image-2.0.1\include;D:\Games\SpaceLiving\vs_dev_lib\SDL2-2.0.7\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Games\SpaceLiving\vs_dev_lib\SDL2_ttf-2.0.14\lib\x86;D:\Games\SpaceLiving\Space_Living\freeglut\lib;D:\Games\SpaceLiving\vs_dev_lib\SDL2_image-2.0.1\lib\x86;D:\Games\SpaceLiving\vs_dev_lib\SDL2-2.0.7\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\Projects\Space_Living\Libraries\SDL2_ttf-2.0.14\include;D:\Projects\Space_Living\Libraries\freeglut\include;D:\Projects\Space_Living\Libraries\SDL2_image-2.0.4\include;D:\Projects\Space_Living\Libraries\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Projects\Space_Living\Libraries\SDL2_ttf-2.0.14\lib\x86;D:\Projects\Space_Living\Libraries\freeglut\lib;D:\Projects\Space_Living\Libraries\SDL2_image-2.0.4\lib\x86;D:\Projects\Space_Living\Libraries\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>D:\Games\SpaceLiving\Space_Living\freeglut\include;D:\vs_dev_lib\SDL2-2.0.4\include;D:\vs_dev_lib\SDL2_image-2.0.1\include;D:\vs_dev_lib\SDL2_ttf-2.0.14\include;$(IncludePath)</IncludePath>
@@ -168,7 +168,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;freeglut.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>inventory.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Inventory::pInventorySize' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Inventory::{ctor}</FUNCTION>
+    <DECORATED>??0Inventory@@QEAA@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>inventory.cpp</FILENAME>
+      <LINE>32</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6271</DEFECTCODE>
+    <DESCRIPTION>Extra argument passed to 'printf':  _Param_(2) is not used by the format string.</DESCRIPTION>
+    <FUNCTION>Inventory::{ctor}</FUNCTION>
+    <DECORATED>??0Inventory@@QEAA@UInventoryInformation@@@Z</DECORATED>
+    <FUNCLINE>19</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>inventory.cpp</FILENAME>
+      <LINE>96</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>Inventory::AddItem</FUNCTION>
+    <DECORATED>?AddItem@Inventory@@QEAAXPEAVInventoryItem@@@Z</DECORATED>
+    <FUNCLINE>87</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>inventory.cpp</FILENAME>
+      <LINE>110</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>Inventory::AddItem</FUNCTION>
+    <DECORATED>?AddItem@Inventory@@QEAAXVInventoryItem@@@Z</DECORATED>
+    <FUNCLINE>101</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>droppedobject.cpp</FILENAME>
+      <LINE>28</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'DroppedObjectManager::TextureLocation' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>DroppedObjectManager::{ctor}</FUNCTION>
+    <DECORATED>??0DroppedObjectManager@@QEAA@XZ</DECORATED>
+    <FUNCLINE>28</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>droppedobject.cpp</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'DroppedObjectManager::TextureLocation' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>DroppedObjectManager::{ctor}</FUNCTION>
+    <DECORATED>??0DroppedObjectManager@@QEAA@H@Z</DECORATED>
+    <FUNCLINE>39</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>screenmanager.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'ScreenManager::ScreenTexture' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>ScreenManager::{ctor}</FUNCTION>
+    <DECORATED>??0ScreenManager@@QEAA@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>screenmanager.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'ScreenManager::Options' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>ScreenManager::{ctor}</FUNCTION>
+    <DECORATED>??0ScreenManager@@QEAA@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>screenmanager.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'ScreenManager::CurrentScreen' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>ScreenManager::{ctor}</FUNCTION>
+    <DECORATED>??0ScreenManager@@QEAA@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>screenmanager.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'ScreenManager::ScreenSurface' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>ScreenManager::{ctor}</FUNCTION>
+    <DECORATED>??0ScreenManager@@QEAA@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>screenmanager.cpp</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'ScreenManager::ScreenTexture' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>ScreenManager::{ctor}</FUNCTION>
+    <DECORATED>??0ScreenManager@@QEAA@USDL_Rect@@0@Z</DECORATED>
+    <FUNCLINE>9</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>screenmanager.cpp</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'ScreenManager::Options' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>ScreenManager::{ctor}</FUNCTION>
+    <DECORATED>??0ScreenManager@@QEAA@USDL_Rect@@0@Z</DECORATED>
+    <FUNCLINE>9</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>screenmanager.cpp</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'ScreenManager::CurrentScreen' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>ScreenManager::{ctor}</FUNCTION>
+    <DECORATED>??0ScreenManager@@QEAA@USDL_Rect@@0@Z</DECORATED>
+    <FUNCLINE>9</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>screenmanager.cpp</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'ScreenManager::ScreenSurface' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>ScreenManager::{ctor}</FUNCTION>
+    <DECORATED>??0ScreenManager@@QEAA@USDL_Rect@@0@Z</DECORATED>
+    <FUNCLINE>9</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>screenmanager.cpp</FILENAME>
+      <LINE>210</LINE>
+      <COLUMN>43</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>ScreenManager::LoadInfo</FUNCTION>
+    <DECORATED>?LoadInfo@ScreenManager@@AEAAXXZ</DECORATED>
+    <FUNCLINE>173</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

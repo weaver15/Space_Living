@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>grid.h</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>std::hash&lt;std::tuple&lt;int,int&gt; &gt;::()</FUNCTION>
+    <DECORATED>??R?$hash@V?$tuple@HH@std@@@std@@QEBA_KAEBV?$tuple@HH@1@@Z</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>grid.h</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>std::hash&lt;std::tuple&lt;int,int&gt; &gt;::()</FUNCTION>
+    <DECORATED>??R?$hash@V?$tuple@HH@std@@@std@@QEBA_KAEBV?$tuple@HH@1@@Z</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>level.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Level::LevelSize' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Level::{ctor}</FUNCTION>
+    <DECORATED>??0Level@@QEAA@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>level.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Level::LevelState' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Level::{ctor}</FUNCTION>
+    <DECORATED>??0Level@@QEAA@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>level.cpp</FILENAME>
+      <LINE>26</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6271</DEFECTCODE>
+    <DESCRIPTION>Extra argument passed to 'printf':  _Param_(2) is not used by the format string.</DESCRIPTION>
+    <FUNCTION>Level::Load</FUNCTION>
+    <DECORATED>?Load@Level@@QEAA_NPEAUSDL_Renderer@@@Z</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>level.cpp</FILENAME>
+      <LINE>33</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6271</DEFECTCODE>
+    <DESCRIPTION>Extra argument passed to 'printf':  _Param_(2) is not used by the format string.</DESCRIPTION>
+    <FUNCTION>Level::Load</FUNCTION>
+    <DECORATED>?Load@Level@@QEAA_NPEAUSDL_Renderer@@@Z</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>level.cpp</FILENAME>
+      <LINE>43</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6271</DEFECTCODE>
+    <DESCRIPTION>Extra argument passed to 'printf':  _Param_(2) is not used by the format string.</DESCRIPTION>
+    <FUNCTION>Level::LoadLevel</FUNCTION>
+    <DECORATED>?LoadLevel@Level@@AEAAXXZ</DECORATED>
+    <FUNCLINE>39</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>level.cpp</FILENAME>
+      <LINE>71</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6271</DEFECTCODE>
+    <DESCRIPTION>Extra argument passed to 'printf':  _Param_(2) is not used by the format string.</DESCRIPTION>
+    <FUNCTION>Level::LoadLevel</FUNCTION>
+    <DECORATED>?LoadLevel@Level@@AEAAXXZ</DECORATED>
+    <FUNCLINE>39</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>level.cpp</FILENAME>
+      <LINE>94</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6271</DEFECTCODE>
+    <DESCRIPTION>Extra argument passed to 'printf':  _Param_(2) is not used by the format string.</DESCRIPTION>
+    <FUNCTION>Level::LoadMedia</FUNCTION>
+    <DECORATED>?LoadMedia@Level@@QEAA_NPEAUSDL_Renderer@@PEAUSDL_Window@@@Z</DECORATED>
+    <FUNCLINE>75</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

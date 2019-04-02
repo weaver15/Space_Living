@@ -162,8 +162,8 @@
     <ClCompile Include="ScreenManager.cpp">
       <Filter>Source Files\Screen</Filter>
     </ClCompile>
-    <ClCompile Include="ControllerManager.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Source Files\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -254,8 +254,8 @@
     <ClInclude Include="ScreenManager.h">
       <Filter>Header Files\Screen</Filter>
     </ClInclude>
-    <ClInclude Include="ControllerManager.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Controller.h">
+      <Filter>Header Files\Player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,4 +1,10 @@
-3//19/19
+3/28/19
+Working on a controller manager for keyboard and gamepad support
+
+3/27/19
+Here is a note, always use the x86 libraries! Spent the night figuring that out the hard way
+
+3/19/19
 It has been one year and a day since I have worked on this. It never got me a job! I don't think anyone ever saw it.
 I'm coming back to it now just to keep sharp and have a side project. I have updated all the libraries and have 
 the git setup fixed.

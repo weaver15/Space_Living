@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>grid.h</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>std::hash&lt;std::tuple&lt;int,int&gt; &gt;::()</FUNCTION>
+    <DECORATED>??R?$hash@V?$tuple@HH@std@@@std@@QEBA_KAEBV?$tuple@HH@1@@Z</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>grid.h</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>std::hash&lt;std::tuple&lt;int,int&gt; &gt;::()</FUNCTION>
+    <DECORATED>??R?$hash@V?$tuple@HH@std@@@std@@QEBA_KAEBV?$tuple@HH@1@@Z</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>gameinfomanager.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'GameInfoManager::TileSize' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>GameInfoManager::{ctor}</FUNCTION>
+    <DECORATED>??0GameInfoManager@@QEAA@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>gameinfomanager.cpp</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'GameInfoManager::ScreenTileSize' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>GameInfoManager::{ctor}</FUNCTION>
+    <DECORATED>??0GameInfoManager@@QEAA@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>tile.h</FILENAME>
+      <LINE>36</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'TileDetails::TextureLocation' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>TileDetails::{ctor}</FUNCTION>
+    <DECORATED>??0TileDetails@@QEAA@XZ</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>tile.h</FILENAME>
+      <LINE>36</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'TileDetails::TileType' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>TileDetails::{ctor}</FUNCTION>
+    <DECORATED>??0TileDetails@@QEAA@XZ</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>tile.h</FILENAME>
+      <LINE>36</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'TileDetails::TileLocation' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>TileDetails::{ctor}</FUNCTION>
+    <DECORATED>??0TileDetails@@QEAA@XZ</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>tile.h</FILENAME>
+      <LINE>36</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'TileDetails::TileWalls' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>TileDetails::{ctor}</FUNCTION>
+    <DECORATED>??0TileDetails@@QEAA@XZ</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>gameinfomanager.cpp</FILENAME>
+      <LINE>179</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6271</DEFECTCODE>
+    <DESCRIPTION>Extra argument passed to 'printf':  _Param_(2) is not used by the format string.</DESCRIPTION>
+    <FUNCTION>GameInfoManager::LoadPlayerInformation</FUNCTION>
+    <DECORATED>?LoadPlayerInformation@GameInfoManager@@QEAAXPEAVPlayer@@@Z</DECORATED>
+    <FUNCLINE>176</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>d:\projects\space_living\space_living</FILEPATH>
+      <FILENAME>gameinfomanager.cpp</FILENAME>
+      <LINE>205</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6271</DEFECTCODE>
+    <DESCRIPTION>Extra argument passed to 'printf':  _Param_(2) is not used by the format string.</DESCRIPTION>
+    <FUNCTION>GameInfoManager::LoadBossInformation</FUNCTION>
+    <DECORATED>?LoadBossInformation@GameInfoManager@@QEAAXPEAVBoss@@@Z</DECORATED>
+    <FUNCLINE>202</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
