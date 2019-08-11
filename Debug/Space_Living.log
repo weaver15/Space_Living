@@ -2,81 +2,84 @@
   Boss.cpp
   Calculate.cpp
   Character.cpp
-  ControllerManager.cpp
+  Controller.cpp
   FontDialogBox.cpp
   Door.cpp
   DroppedObject.cpp
-d:\projects\space_living\space_living\droppedobject.cpp(97): warning C4018: '<': signed/unsigned mismatch
   Enemy.cpp
-d:\projects\space_living\space_living\enemy.cpp(191): warning C4018: '<': signed/unsigned mismatch
-d:\projects\space_living\space_living\enemy.cpp(277): warning C4018: '<': signed/unsigned mismatch
-d:\projects\space_living\space_living\enemy.cpp(292): warning C4018: '<': signed/unsigned mismatch
+D:\Projects\Space_Living\Space_Living\DroppedObject.cpp(97,20): warning C4018:  '<': signed/unsigned mismatch
+D:\Projects\Space_Living\Space_Living\Enemy.cpp(191,28): warning C4018:  '<': signed/unsigned mismatch
+D:\Projects\Space_Living\Space_Living\Enemy.cpp(277,20): warning C4018:  '<': signed/unsigned mismatch
   Enums.cpp
   EquipInventory.cpp
-d:\projects\space_living\space_living\equipinventory.cpp(19): warning C4474: 'printf' : too many arguments passed for format string
-  d:\projects\space_living\space_living\equipinventory.cpp(19): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Enemy.cpp(292,21): warning C4018:  '<': signed/unsigned mismatch
+D:\Projects\Space_Living\Space_Living\EquipInventory.cpp(19,67): warning C4474:  'printf' : too many arguments passed for format string
   ErrorManager.cpp
   Font.cpp
-d:\projects\space_living\space_living\font.cpp(78): warning C4018: '<': signed/unsigned mismatch
-d:\projects\space_living\space_living\font.cpp(92): warning C4018: '<': signed/unsigned mismatch
+D:\Projects\Space_Living\Space_Living\EquipInventory.cpp(19,67): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Font.cpp(78,20): warning C4018:  '<': signed/unsigned mismatch
   GameInfoManager.cpp
-d:\projects\space_living\space_living\gameinfomanager.cpp(179): warning C4474: 'printf' : too many arguments passed for format string
-  d:\projects\space_living\space_living\gameinfomanager.cpp(179): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-d:\projects\space_living\space_living\gameinfomanager.cpp(205): warning C4474: 'printf' : too many arguments passed for format string
-  d:\projects\space_living\space_living\gameinfomanager.cpp(205): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Font.cpp(92,20): warning C4018:  '<': signed/unsigned mismatch
+D:\Projects\Space_Living\Space_Living\GameInfoManager.cpp(179,53): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\GameInfoManager.cpp(179,53): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\GameInfoManager.cpp(205,51): warning C4474:  'printf' : too many arguments passed for format string
   Globals.cpp
   Grid.cpp
   HUD.cpp
   Inventory.cpp
-d:\projects\space_living\space_living\inventory.cpp(32): warning C4474: 'printf' : too many arguments passed for format string
-  d:\projects\space_living\space_living\inventory.cpp(32): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-d:\projects\space_living\space_living\inventory.cpp(151): warning C4018: '<': signed/unsigned mismatch
+D:\Projects\Space_Living\Space_Living\GameInfoManager.cpp(205,51): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Inventory.cpp(32,52): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Inventory.cpp(32,52): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
   InventoryItem.cpp
   Level.cpp
-d:\projects\space_living\space_living\level.cpp(26): warning C4474: 'printf' : too many arguments passed for format string
-  d:\projects\space_living\space_living\level.cpp(26): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-d:\projects\space_living\space_living\level.cpp(33): warning C4474: 'printf' : too many arguments passed for format string
-  d:\projects\space_living\space_living\level.cpp(33): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-d:\projects\space_living\space_living\level.cpp(30): warning C4101: 'n': unreferenced local variable
-d:\projects\space_living\space_living\level.cpp(43): warning C4474: 'printf' : too many arguments passed for format string
-  d:\projects\space_living\space_living\level.cpp(43): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-d:\projects\space_living\space_living\level.cpp(71): warning C4474: 'printf' : too many arguments passed for format string
-  d:\projects\space_living\space_living\level.cpp(71): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-d:\projects\space_living\space_living\level.cpp(94): warning C4474: 'printf' : too many arguments passed for format string
-  d:\projects\space_living\space_living\level.cpp(94): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-d:\projects\space_living\space_living\level.cpp(118): warning C4101: 'i': unreferenced local variable
-d:\projects\space_living\space_living\level.cpp(402): warning C4101: 'i': unreferenced local variable
+D:\Projects\Space_Living\Space_Living\Inventory.cpp(151,20): warning C4018:  '<': signed/unsigned mismatch
+D:\Projects\Space_Living\Space_Living\Level.cpp(26,51): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(26,51): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(33,45): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(33,45): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(30,13): warning C4101:  'n': unreferenced local variable
+D:\Projects\Space_Living\Space_Living\Level.cpp(43,43): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(43,43): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(71,38): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(71,38): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(94,48): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(94,48): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(118,13): warning C4101:  'i': unreferenced local variable
   Generating Code...
-d:\projects\space_living\space_living\enemy.cpp(381): warning C4715: 'EnemyManager::FirstDeadEnemy': not all control paths return a value
-d:\projects\space_living\space_living\droppedobject.cpp(102): warning C4715: 'DroppedObjectManager::FirstDeadDroppedObject': not all control paths return a value
+D:\Projects\Space_Living\Space_Living\Level.cpp(402,13): warning C4101:  'i': unreferenced local variable
+D:\Projects\Space_Living\Space_Living\Enemy.cpp(381): warning C4715:  'EnemyManager::FirstDeadEnemy': not all control paths return a value
   Compiling...
   LootTable.cpp
   main.cpp
-d:\projects\space_living\space_living\main.cpp(209): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Projects\Space_Living\Space_Living\DroppedObject.cpp(102): warning C4715:  'DroppedObjectManager::FirstDeadDroppedObject': not all control paths return a value
   MenuSelector.cpp
   OpenGL.h
   Player.cpp
   Projectile.cpp
-d:\projects\space_living\space_living\projectile.cpp(65): warning C4244: '=': conversion from '_Ty1' to 'int', possible loss of data
-          with
-          [
-              _Ty1=double
-          ]
-d:\projects\space_living\space_living\projectile.cpp(66): warning C4244: '=': conversion from '_Ty2' to 'int', possible loss of data
-          with
-          [
-              _Ty2=double
-          ]
+D:\Projects\Space_Living\Space_Living\main.cpp(209,12): warning C4244:  'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(65,28): warning C4244:  '=': conversion from '_Ty1' to 'int', possible loss of data
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(65,28): warning C4244:         with
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(65,28): warning C4244:         [
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(65,28): warning C4244:             _Ty1=double
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(65,28): warning C4244:         ]
+  pugixml.cpp
   SolidObject.cpp
-d:\projects\space_living\space_living\solidobject.cpp(56): warning C4018: '<': signed/unsigned mismatch
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(66,28): warning C4244:  '=': conversion from '_Ty2' to 'int', possible loss of data
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(66,28): warning C4244:         with
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(66,28): warning C4244:         [
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(66,28): warning C4244:             _Ty2=double
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(66,28): warning C4244:         ]
   SpawnPoint.cpp
   ScreenManager.cpp
-d:\projects\space_living\space_living\screenmanager.cpp(214): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
-d:\projects\space_living\space_living\screenmanager.cpp(214): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-d:\projects\space_living\space_living\screenmanager.cpp(219): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\Projects\Space_Living\Space_Living\SolidObject.cpp(56,28): warning C4018:  '<': signed/unsigned mismatch
+D:\Projects\Space_Living\Space_Living\ScreenManager.cpp(214,24): warning C4838:  conversion from 'double' to 'int' requires a narrowing conversion
+D:\Projects\Space_Living\Space_Living\ScreenManager.cpp(214,24): warning C4244:  'initializing': conversion from 'double' to 'int', possible loss of data
+D:\Projects\Space_Living\Space_Living\ScreenManager.cpp(214,41): warning C4838:  conversion from 'double' to 'int' requires a narrowing conversion
+D:\Projects\Space_Living\Space_Living\ScreenManager.cpp(214,41): warning C4244:  'initializing': conversion from 'double' to 'int', possible loss of data
   Texture.cpp
   Tile.cpp
   Timer.cpp
   Generating Code...
-d:\projects\space_living\space_living\projectile.cpp(143): warning C4715: 'ProjectileManager::FirstDeadProjectile': not all control paths return a value
+D:\Projects\Space_Living\Space_Living\ScreenManager.cpp(219,46): warning C4244:  'argument': conversion from 'double' to 'int', possible loss of data
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(143): warning C4715:  'ProjectileManager::FirstDeadProjectile': not all control paths return a value
   Space_Living.vcxproj -> D:\Projects\Space_Living\Debug\Space_Living.exe
