@@ -136,8 +136,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>D:\Projects\Space_Living\Libraries\SDL2_ttf-2.0.14\include;D:\Projects\Space_Living\Libraries\freeglut\include;D:\Projects\Space_Living\Libraries\SDL2_image-2.0.4\include;D:\Projects\Space_Living\Libraries\SDL2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Projects\Space_Living\Libraries\SDL2_ttf-2.0.14\lib\x86;D:\Projects\Space_Living\Libraries\freeglut\lib;D:\Projects\Space_Living\Libraries\SDL2_image-2.0.4\lib\x86;D:\Projects\Space_Living\Libraries\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\Projects\Space_Living\Libraries\SDL2_ttf-2.0.14\include;D:\Projects\Space_Living\Libraries\freeglut\include;D:\Projects\Space_Living\Libraries\SDL2_image-2.0.4\include;D:\Projects\Space_Living\Libraries\SDL2\include;D:\Projects\Space_Living\Libraries\SDL2_mixer-2.0.4\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Projects\Space_Living\Libraries\SDL2_mixer-2.0.4\lib\x86;D:\Projects\Space_Living\Libraries\SDL2_ttf-2.0.14\lib\x86;D:\Projects\Space_Living\Libraries\freeglut\lib;D:\Projects\Space_Living\Libraries\SDL2_image-2.0.4\lib\x86;D:\Projects\Space_Living\Libraries\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>D:\Games\SpaceLiving\Space_Living\freeglut\include;D:\vs_dev_lib\SDL2-2.0.4\include;D:\vs_dev_lib\SDL2_image-2.0.1\include;D:\vs_dev_lib\SDL2_ttf-2.0.14\include;$(IncludePath)</IncludePath>
@@ -155,7 +155,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;OpenGL32.lib;freeglut.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;OpenGL32.lib;freeglut.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>

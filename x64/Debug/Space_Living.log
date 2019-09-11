@@ -1,1 +1,84 @@
-﻿  Space_Living.vcxproj -> D:\Projects\Space_Living\x64\Debug\Space_Living.exe
+﻿  AnimatedObject.cpp
+  Boss.cpp
+  Calculate.cpp
+  Character.cpp
+  Controller.cpp
+  FontDialogBox.cpp
+  Door.cpp
+D:\Projects\Space_Living\Space_Living\Door.cpp(76,6): warning C4267:  'argument': conversion from 'size_t' to 'int', possible loss of data
+  DroppedObject.cpp
+D:\Projects\Space_Living\Space_Living\Door.cpp(77,16): warning C4267:  'return': conversion from 'size_t' to 'int', possible loss of data
+  Enemy.cpp
+D:\Projects\Space_Living\Space_Living\DroppedObject.cpp(75,26): warning C4267:  'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\Space_Living\Space_Living\Enemy.cpp(181,35): warning C4267:  '=': conversion from 'size_t' to 'int', possible loss of data
+  Enums.cpp
+  EquipInventory.cpp
+D:\Projects\Space_Living\Space_Living\Enemy.cpp(379,12): warning C4267:  'return': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\Space_Living\Space_Living\EquipInventory.cpp(19,67): warning C4474:  'printf' : too many arguments passed for format string
+  ErrorManager.cpp
+  Font.cpp
+  GameInfoManager.cpp
+D:\Projects\Space_Living\Space_Living\EquipInventory.cpp(19,67): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\GameInfoManager.cpp(179,53): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\GameInfoManager.cpp(179,53): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\GameInfoManager.cpp(205,51): warning C4474:  'printf' : too many arguments passed for format string
+  Globals.cpp
+  Grid.cpp
+  HUD.cpp
+  Inventory.cpp
+D:\Projects\Space_Living\Space_Living\GameInfoManager.cpp(205,51): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Inventory.cpp(32,52): warning C4474:  'printf' : too many arguments passed for format string
+  InventoryItem.cpp
+  Level.cpp
+D:\Projects\Space_Living\Space_Living\Inventory.cpp(32,52): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(26,51): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(26,51): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(33,45): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(33,45): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(30,13): warning C4101:  'n': unreferenced local variable
+D:\Projects\Space_Living\Space_Living\Level.cpp(43,43): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(43,43): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(71,38): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(71,38): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(94,48): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(94,48): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(118,13): warning C4101:  'i': unreferenced local variable
+  Generating Code...
+D:\Projects\Space_Living\Space_Living\Level.cpp(402,13): warning C4101:  'i': unreferenced local variable
+D:\Projects\Space_Living\Space_Living\Enemy.cpp(381): warning C4715:  'EnemyManager::FirstDeadEnemy': not all control paths return a value
+  Compiling...
+  LootTable.cpp
+  main.cpp
+D:\Projects\Space_Living\Space_Living\DroppedObject.cpp(102): warning C4715:  'DroppedObjectManager::FirstDeadDroppedObject': not all control paths return a value
+  MenuSelector.cpp
+  OpenGL.h
+  Player.cpp
+  Projectile.cpp
+D:\Projects\Space_Living\Space_Living\main.cpp(209,12): warning C4244:  'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(65,28): warning C4244:  '=': conversion from '_Ty1' to 'int', possible loss of data
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(65,28): warning C4244:         with
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(65,28): warning C4244:         [
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(65,28): warning C4244:             _Ty1=double
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(65,28): warning C4244:         ]
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(66,28): warning C4244:  '=': conversion from '_Ty2' to 'int', possible loss of data
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(66,28): warning C4244:         with
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(66,28): warning C4244:         [
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(66,28): warning C4244:             _Ty2=double
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(66,28): warning C4244:         ]
+  pugixml.cpp
+  SolidObject.cpp
+  SpawnPoint.cpp
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(141,12): warning C4267:  'return': conversion from 'size_t' to 'int', possible loss of data
+  ScreenManager.cpp
+D:\Projects\Space_Living\Space_Living\SpawnPoint.cpp(112,49): warning C4267:  '=': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\Space_Living\Space_Living\ScreenManager.cpp(214,24): warning C4838:  conversion from 'double' to 'int' requires a narrowing conversion
+D:\Projects\Space_Living\Space_Living\ScreenManager.cpp(214,24): warning C4244:  'initializing': conversion from 'double' to 'int', possible loss of data
+D:\Projects\Space_Living\Space_Living\ScreenManager.cpp(214,41): warning C4838:  conversion from 'double' to 'int' requires a narrowing conversion
+D:\Projects\Space_Living\Space_Living\ScreenManager.cpp(214,41): warning C4244:  'initializing': conversion from 'double' to 'int', possible loss of data
+  Texture.cpp
+  Tile.cpp
+  Timer.cpp
+  Generating Code...
+D:\Projects\Space_Living\Space_Living\ScreenManager.cpp(219,46): warning C4244:  'argument': conversion from 'double' to 'int', possible loss of data
+D:\Projects\Space_Living\Space_Living\Projectile.cpp(143): warning C4715:  'ProjectileManager::FirstDeadProjectile': not all control paths return a value
+  Space_Living.vcxproj -> D:\Projects\Space_Living\x64\Debug\Space_Living.exe

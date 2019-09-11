@@ -1,6 +1,7 @@
 #pragma once
 #include <SDL.h>
 #include <SDL_image.h>
+#include <SDL_mixer.h>
 #include <stdio.h>
 #include <string>
 #include "Level.h"
@@ -17,6 +18,10 @@ Timer FPS_Timer;
 
 GameState CurrentGameState = GameState::Screen;
 //GameState CurrentGameState = GameState::Active_Level;
+
+bool playBGMusic = false;
+Mix_Music* gMusic = NULL;
+Mix_Chunk *gShot = NULL;
 
 int Close()
 {
@@ -48,8 +53,15 @@ bool Init2()
 		success = false;
 	}
 
+	//Initialize SDL_mixer
+	if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) < 0)
+	{
+		printf("SDL_mixer could not initialize! SDL_mixer Error: %s\n", Mix_GetError());
+		success = false;
+	}
+
 	//Initialize SDL
-	if (SDL_Init(SDL_INIT_VIDEO) < 0)
+	if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO) < 0)
 	{
 		printf("SDL could not initialize! SDL Error: %s\n", SDL_GetError());
 		success = false;
@@ -100,14 +112,41 @@ bool Init2()
 
 void Init()
 {
+	//Loading success flag
+	bool success = true;
 	IMG_Init(IMG_INIT_PNG);
 	TTF_Init();
-	SDL_Init(SDL_INIT_VIDEO);
+	SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO);
 	SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1");
+	Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048);
 	Window = SDL_CreateWindow("Space Living", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
 	Renderer = SDL_CreateRenderer(Window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 	SDL_SetRenderDrawColor(Renderer, 0xFF, 0xFF, 0xFF, 0xFF);
 	IMG_Init(IMG_INIT_PNG);
+
+
+
+	//Load music
+	gMusic = Mix_LoadMUS("Audio/Anxiety.mp3");
+	if (gMusic == NULL)
+	{
+		printf("Failed to load music! SDL_mixer Error: %s\n", Mix_GetError());
+		success = false;
+	}
+	else if(playBGMusic == true)
+	{
+		Mix_PlayMusic(gMusic, -1);
+	}
+	 
+	//Load sound effects
+	gShot = Mix_LoadWAV("Audio/laser2.ogg");
+	if (gShot == NULL)
+	{
+		printf("Failed to load laser1 sound effect! SDL_mixer Error: %s\n", Mix_GetError());
+		success = false;
+	}
+	//Mix_PlayChannel(-1, gShot, 0);
+
 }
 
 void LoadLevel()
@@ -132,6 +171,7 @@ void LoadStartScreen()
 
 void LoadMedia()
 {
+
 	switch (CurrentGameState)
 	{
 		case Screen:
