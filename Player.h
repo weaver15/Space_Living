@@ -31,9 +31,6 @@ public:
 	void PlayerInventoryInput(SDL_Renderer* renderer, SDL_Event* e);
 	bool IsInventoryShowing() { return PlayerInventory.IsInventoryShowing(); }
 
-	//IncrementEnergyCount used to add positive or negative ints to the Players Energy Count
-	void IncrementEnergyCount(int value);
-	const int GetEnergyCount();
 
 	//Initializers 
 	void InitializeInventory(InventoryInformation inventoryInfo, EquipmentSlotInformation equipInfo);
@@ -43,16 +40,12 @@ public:
 	void Reset();
 
 	vector<SDL_Point>* GetTrail();
-	const bool GetHasBossKey();
-	void SetHasBossKey(bool hasKey);
 
 	void ControllerInput();
 
 private:
 	int WalkSpeed = 6;
 	int RunSpeed = 8; 
-	int EnergyCount = 0;
-	bool HasBossDoorKey = false;
 	static int const MAXTRAIL = 100;
 	vector<SDL_Point> Trail;
 

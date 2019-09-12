@@ -13,7 +13,6 @@ Player::Player(std::pair<SDL_Rect, SDL_Rect> details)
 	StartingHitPoints = 45;
 	HitPoints = 45; 
 	SetIsAlive(true);
-	EnergyCount = 15; 
 	Trail.resize(MAXTRAIL);
 	SetTag("Player");
 }
@@ -248,34 +247,14 @@ void Player::PickUpItem(InventoryItem* item)
 	PlayerInventory.AddItem(item);
 }
 
-void Player::IncrementEnergyCount(int value)
-{
-	EnergyCount += value; 
-}
-
-const int Player::GetEnergyCount()
-{
-	return EnergyCount;
-}
 
 void Player::Reset()
 {
 	HitPoints = StartingHitPoints; 
-	EnergyCount = 0;
 	AnimatedObject::Reset();
 }
 
 vector<SDL_Point>* Player::GetTrail()
 {
 	return &Trail;
-}
-
-const bool Player::GetHasBossKey()
-{
-	return HasBossDoorKey; 
-}
-
-void Player::SetHasBossKey(bool hasKey)
-{
-	HasBossDoorKey = hasKey; 
 }

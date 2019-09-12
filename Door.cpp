@@ -87,36 +87,6 @@ bool DoorManager::CheckCollision(SDL_Rect* dimensions, int index)
 		return false;
 }
 
-int DoorManager::OpenDoor(SDL_Rect* dimensions, const int playerEnergy)
-{
-	int index = CheckCollision(dimensions);
-	if (index >= 0)
-	{
-		int cost = Doors[index].OpenCost;
-		if (playerEnergy >= cost)
-		{
-			if (Doors[index].IsVertical)
-				Doors[index].OpenDoor(&OpenDoorVerticalTextureLocation);
-			else
-				Doors[index].OpenDoor(&OpenDoorHorizontalTextureLocation);
-			return -cost;
-		}
-	}
-	return 0;
-}
-
-bool DoorManager::OpenBossDoor(SDL_Rect* dimensions, bool hasKey)
-{
-	if (hasKey && BossDoor.IsAlive() && SDL_HasIntersection(&BossDoor.InteractionArea, dimensions))
-	{
-		if (BossDoor.IsVertical)
-			BossDoor.OpenDoor(&OpenDoorVerticalTextureLocation);
-		else
-			BossDoor.OpenDoor(&OpenDoorHorizontalTextureLocation);
-		return true;
-	}
-	return false;
-}
 
 std::vector<Door> DoorManager::GetDoors()
 {

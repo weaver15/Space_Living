@@ -110,10 +110,6 @@ bool Texture::LoadFont(SDL_Renderer* renderer)
 	Font = TTF_OpenFont("Texture/font.TTF", 28);
 	//Render text
 	SDL_Color textColor = { 0, 0, 0 };
-	if (!LoadFromRenderedText(renderer, "Energy: ", textColor))
-	{
-		success = false;
-	}
 	return success;
 }
 

@@ -87,8 +87,8 @@ bool Level::LoadMedia(SDL_Renderer* renderer, SDL_Window* gWindow)
 	//Tile texture
 	textTiles.InitTexture(renderer, gWindow, "Tile");
 
-	_HUD.InitializeFont(renderer, 0, 0);
-	_HUD.SetStartOfLevelHUD(renderer, _Player.GetHitPoints(), _Player.GetEnergyCount());
+	_HUD.InitializeFont(renderer, 0);
+	_HUD.SetStartOfLevelHUD(renderer, _Player.GetHitPoints());
 
 #ifdef _DEBUG
 	printf("Level: Texture Loaded\n", SDL_GetError());
@@ -223,7 +223,7 @@ void Level::PauseLevel()
 void Level::Reset(SDL_Renderer* renderer)
 {
 	_Player.Reset();
-	_HUD.SetStartOfLevelHUD(renderer, _Player.GetHitPoints(), _Player.GetEnergyCount());
+	_HUD.SetStartOfLevelHUD(renderer, _Player.GetHitPoints());
 	_EnemyManager.Reset();
 	_SpawnManager.Reset();
 	_Grid._DoorManager.ResetDoors();
@@ -233,13 +233,10 @@ void Level::Reset(SDL_Renderer* renderer)
 void Level::CheckCollisionResults(SDL_Renderer* renderer, CollisionFlags flags)
 {
 	//Check the collision flag results to determine if an item should drop, player gets hit
-	//player picks up item and the players energy count
 
 	if (flags.ProjectileHit)
 	{
 		DropItem(_EnemyManager.GetLastItemDropLocation());
-		_Player.IncrementEnergyCount(_EnemyManager.GetDeadEnemiesEnergy());
-		_HUD.UpdatePlayerEnergy(renderer, _Player.GetEnergyCount());
 	}
 	if (flags.HitPlayer)
 	{
@@ -248,11 +245,8 @@ void Level::CheckCollisionResults(SDL_Renderer* renderer, CollisionFlags flags)
 	}
 
 	auto type = _DroppedObjectManager.CheckCollision(_Player.GetLocation());
-	if (type == DroppedObjectType::Key)
-	{
-		_Player.SetHasBossKey(true);
-	}
-	else if (type != DroppedObjectType::None)
+
+	if (type != DroppedObjectType::None)
 	{
 		PickUpItem();
 	}
@@ -330,17 +324,6 @@ void Level::PlayerInput(SDL_Event* e, SDL_Renderer* renderer)
 	if (e->type == SDL_KEYDOWN && keyPressed == SDLK_ESCAPE && e->key.repeat == 0)
 	{
 		PauseLevel();
-	}
-
-	if (e->type == SDL_KEYDOWN && keyPressed == SDLK_e && e->key.repeat == 0)
-	{
-		_Player.IncrementEnergyCount(_Grid._DoorManager.OpenDoor(_Player.GetLocation(), _Player.GetEnergyCount()));
-		_HUD.UpdatePlayerEnergy(renderer, _Player.GetEnergyCount());
-
-		if (_Grid._DoorManager.OpenBossDoor(_Player.GetLocation(), _Player.GetHasBossKey()))
-		{
-			ActivateBoss();
-		}
 	}
 
 	//Debug & testing inputs

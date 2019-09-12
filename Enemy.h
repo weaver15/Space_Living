@@ -49,7 +49,6 @@ public:
 	void Reset();
 	bool DropItem();
 
-	const int GetEnergy();
 	const int GetId();
 
 	void SetCurrentState(EnemyState state);
@@ -69,7 +68,6 @@ private:
 	SDL_Point Destination;
 
 	int Id;
-	int Energy;
 	int DropItemChance = 25;
 	int ParentSpawn;
 	bool IsMovingToDestination = false;
@@ -107,7 +105,6 @@ private:
 
 	int NumberOfEnemies;
 	int AliveEnemies;
-	int LastDeadEnemiesEnergy;
 	SDL_Point LastItemDrop;
 
 	int FirstDeadEnemy();

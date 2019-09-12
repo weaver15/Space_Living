@@ -3,14 +3,10 @@
 
 enum HUDTag
 {
-	EnergyLable,
-	EnergyCount,
 	PlayerHitPointsLable,
 	PlayerHitPointsCount,
-	AmmoLable,
-	AmmoCount
 };
-static const std::string HUDTagStrings[] = { "Energy", "EnergyCount", "Health", "PlayerHitPointsCount", "AmmoLable", "AmmoCount" };
+static const std::string HUDTagStrings[] = {"Health", "PlayerHitPointsCount"};
 
 class HUD
 {
@@ -19,10 +15,9 @@ public:
 	~HUD();
 
 	void Draw(SDL_Renderer* renderer);
-	bool InitializeFont(SDL_Renderer* renderer, int hitpoints ,int startingEnergy);
-	bool UpdatePlayerEnergy(SDL_Renderer* renderer, int energyCount);
+	void InitializeFont(SDL_Renderer* renderer, int hitpoints);;
 	bool UpdatePlayerHitPoints(SDL_Renderer* renderer, int hitPoints);
-	void SetStartOfLevelHUD(SDL_Renderer* renderer, int hitPoints, int energyCount);
+	void SetStartOfLevelHUD(SDL_Renderer* renderer, int hitPoints);
 private:
 	Font HUDFont;
 

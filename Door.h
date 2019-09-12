@@ -33,8 +33,6 @@ public:
 	int CheckCollision(SDL_Rect* dimensions);
 	bool CheckCollision(SDL_Rect* dimensions, int index);
 	bool IsOpen(int index);
-	int OpenDoor(SDL_Rect* dimensions, const int playerEnergy);
-	bool DoorManager::OpenBossDoor(SDL_Rect* dimensions, bool hasKey);
 	std::vector<Door> GetDoors();
 	void SetTextureLocations(SDL_Rect vertClosedDoor, SDL_Rect vertOpenDoor, SDL_Rect horzClosedDoor, SDL_Rect horzOpenDoor);
 	Door GetDoor(int index);

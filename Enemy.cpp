@@ -15,7 +15,6 @@ Enemy::Enemy(EnemyDetails details)
 	AttackType = EnemyAttackType::Melee;
 	MoveFrame(Direction::Left);
 	MovementSpeed = MovementSpeed::Fast;
-	Energy = 1;
 	MovingDirection = Direction::Left;
 	ParentSpawn = details.ParentSpawn;
 	AttackDamage = 2;
@@ -49,10 +48,6 @@ void Enemy::Update(SDL_Rect* playerLocation, vector<SDL_Rect> solids)
 	}
 }
 
-const int Enemy::GetEnergy()
-{
-	return Energy;
-}
 const int Enemy::GetId()
 {
 	return Id;
@@ -215,7 +210,6 @@ CollisionFlags EnemyManager::Update(SDL_Rect* playerLocation,
 						auto enemyLocation = Enemies[index].GetLocation();
 						LastItemDrop = { enemyLocation->x, enemyLocation->y };
 					}
-					LastDeadEnemiesEnergy = Enemies[index].GetEnergy();
 					RemoveEnemy(index);
 					collisionFlags.ProjectileHit = true;
 				}
@@ -386,11 +380,6 @@ SDL_Point* EnemyManager::GetLastItemDropLocation()
 		return &LastItemDrop;
 	else
 		return nullptr;
-}
-
-int EnemyManager::GetDeadEnemiesEnergy()
-{
-	return LastDeadEnemiesEnergy;
 }
 
 void EnemyManager::Reset()
