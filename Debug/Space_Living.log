@@ -8,11 +8,11 @@
   DroppedObject.cpp
   Enemy.cpp
 D:\Projects\Space_Living\Space_Living\DroppedObject.cpp(97,20): warning C4018:  '<': signed/unsigned mismatch
-D:\Projects\Space_Living\Space_Living\Enemy.cpp(186,28): warning C4018:  '<': signed/unsigned mismatch
-D:\Projects\Space_Living\Space_Living\Enemy.cpp(271,20): warning C4018:  '<': signed/unsigned mismatch
+D:\Projects\Space_Living\Space_Living\Enemy.cpp(177,28): warning C4018:  '<': signed/unsigned mismatch
+D:\Projects\Space_Living\Space_Living\Enemy.cpp(256,20): warning C4018:  '<': signed/unsigned mismatch
   Enums.cpp
   EquipInventory.cpp
-D:\Projects\Space_Living\Space_Living\Enemy.cpp(286,21): warning C4018:  '<': signed/unsigned mismatch
+D:\Projects\Space_Living\Space_Living\Enemy.cpp(271,21): warning C4018:  '<': signed/unsigned mismatch
 D:\Projects\Space_Living\Space_Living\EquipInventory.cpp(19,67): warning C4474:  'printf' : too many arguments passed for format string
   ErrorManager.cpp
   Font.cpp
@@ -33,21 +33,21 @@ D:\Projects\Space_Living\Space_Living\Inventory.cpp(32,52): message :  placehold
   InventoryItem.cpp
   Level.cpp
 D:\Projects\Space_Living\Space_Living\Inventory.cpp(151,20): warning C4018:  '<': signed/unsigned mismatch
-D:\Projects\Space_Living\Space_Living\Level.cpp(26,51): warning C4474:  'printf' : too many arguments passed for format string
-D:\Projects\Space_Living\Space_Living\Level.cpp(26,51): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-D:\Projects\Space_Living\Space_Living\Level.cpp(33,45): warning C4474:  'printf' : too many arguments passed for format string
-D:\Projects\Space_Living\Space_Living\Level.cpp(33,45): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-D:\Projects\Space_Living\Space_Living\Level.cpp(30,13): warning C4101:  'n': unreferenced local variable
-D:\Projects\Space_Living\Space_Living\Level.cpp(43,43): warning C4474:  'printf' : too many arguments passed for format string
-D:\Projects\Space_Living\Space_Living\Level.cpp(43,43): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-D:\Projects\Space_Living\Space_Living\Level.cpp(71,38): warning C4474:  'printf' : too many arguments passed for format string
-D:\Projects\Space_Living\Space_Living\Level.cpp(71,38): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-D:\Projects\Space_Living\Space_Living\Level.cpp(94,48): warning C4474:  'printf' : too many arguments passed for format string
-D:\Projects\Space_Living\Space_Living\Level.cpp(94,48): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-D:\Projects\Space_Living\Space_Living\Level.cpp(118,13): warning C4101:  'i': unreferenced local variable
+D:\Projects\Space_Living\Space_Living\Level.cpp(25,51): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(25,51): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(32,45): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(32,45): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(29,13): warning C4101:  'n': unreferenced local variable
+D:\Projects\Space_Living\Space_Living\Level.cpp(42,43): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(42,43): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(65,38): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(65,38): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(88,48): warning C4474:  'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(88,48): message :  placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(111,13): warning C4101:  'i': unreferenced local variable
   Generating Code...
-D:\Projects\Space_Living\Space_Living\Level.cpp(385,13): warning C4101:  'i': unreferenced local variable
-D:\Projects\Space_Living\Space_Living\Enemy.cpp(375): warning C4715:  'EnemyManager::FirstDeadEnemy': not all control paths return a value
+D:\Projects\Space_Living\Space_Living\Level.cpp(307,13): warning C4101:  'i': unreferenced local variable
+D:\Projects\Space_Living\Space_Living\Enemy.cpp(360): warning C4715:  'EnemyManager::FirstDeadEnemy': not all control paths return a value
   Compiling...
   LootTable.cpp
   main.cpp

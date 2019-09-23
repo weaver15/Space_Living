@@ -148,15 +148,6 @@ void Enemy::Reset()
 	MoveFrame(Direction::Left);
 }
 
-bool Enemy::DropItem()
-{
-	int roll = rand() % 100;
-	if (roll < DropItemChance)
-		return true;
-	else
-		return false; 
-}
-
 void Enemy::SetPath(queue<SDL_Point> path)
 {
 	Path = queue<SDL_Point>{ path };
@@ -204,12 +195,6 @@ CollisionFlags EnemyManager::Update(SDL_Rect* playerLocation,
 				Enemies[index].IncrementHitPoints(-(projectiles->GetDamage()));
 				if (Enemies[index].GetHitPoints() <= 0)
 				{
-					LastItemDrop = { 0,0 };
-					if (Enemies[index].DropItem())
-					{
-						auto enemyLocation = Enemies[index].GetLocation();
-						LastItemDrop = { enemyLocation->x, enemyLocation->y };
-					}
 					RemoveEnemy(index);
 					collisionFlags.ProjectileHit = true;
 				}
@@ -372,14 +357,6 @@ int EnemyManager::FirstDeadEnemy()
 		if (!Enemies[i].IsAlive())
 			return i;
 	}
-}
-
-SDL_Point* EnemyManager::GetLastItemDropLocation()
-{
-	if (LastItemDrop.x != 0 && LastItemDrop.y != 0)
-		return &LastItemDrop;
-	else
-		return nullptr;
 }
 
 void EnemyManager::Reset()

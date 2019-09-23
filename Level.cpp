@@ -19,8 +19,7 @@ bool Level::Load(SDL_Renderer* renderer)
 	{
 		LoadLevel();
 		LevelState = LevelState::Active;
-		_Player.InitializeInventoryFont(renderer);
-		_DialogBox.InitializeFont(renderer, 22, FontDialogBoxTag::DoorCost);
+		//_DialogBox.InitializeFont(renderer, 22, FontDialogBoxTag::DoorCost);
 		LevelTimer.Start();
 #ifdef _DEBUG
 		printf("Level 1 Load Successful\n", SDL_GetError());
@@ -49,17 +48,12 @@ void Level::LoadLevel()
 	InitGrid(); 
 	//Player
 	_GameInfoManager.LoadPlayerInformation(&_Player);
-	_GameInfoManager.LoadInventoryInformation(&_Player);
 	//Boss
 	 _GameInfoManager.LoadBossInformation(&_Boss);
 	//Projectile
 	_GameInfoManager.LoadProjectileInformation(&_Player, &_Boss);
 	//Dialog Box
 	_GameInfoManager.LoadDialogBoxInformation(&_DialogBox);
-	//Items
-	_GameInfoManager.LoadItemInformation(&_DroppedObjectManager);
-	//Loot Table
-	_GameInfoManager.LoadLootTableInformation(&_LootTable);
 	//Enemy Manager 
 	_GameInfoManager.LoadEnemyInformation(&_EnemyManager, &_SpawnManager);
 	//Solid Objects
@@ -109,7 +103,6 @@ void Level::Update(SDL_Renderer* renderer, GameState* gameState)
 			std::vector<SDL_Rect> playerSolids = GetSolids();
 			UpdateEnemies(renderer);
 			_Player.Update(&Camera, bCheckCollision, playerSolids);
-			UpdateDisplays(renderer);
 			UpdateGameState(renderer, gameState);
 		}	
 		SetCamera();
@@ -132,22 +125,7 @@ void Level::UpdateEnemies(SDL_Renderer* renderer)
 	
 	CheckCollisionResults(renderer, collisionFlags);
 }
-void Level::UpdateDisplays(SDL_Renderer* renderer)
-{
-	//Show or hide door cost
-	int index = _Grid._DoorManager.CheckCollision(_Player.GetLocation());
-	if (index >= 0)
-	{
-		auto door = _Grid._DoorManager.GetDoor(index);
-		_DialogBox.UpdateLocation(door.GetLocation(), FontDialogBoxTag::DoorCost);
-		_DialogBox.SetIsAlive(true);
-		_DialogBox.UpdateFont(renderer, "Open cost: " + std::to_string(door.OpenCost), FontDialogBoxTag::DoorCost);
-	}
-	else if (_DialogBox.IsAlive())
-	{
-		_DialogBox.SetIsAlive(false);
-	}
-}
+
 void Level::UpdateGameState(SDL_Renderer* renderer, GameState* gameState)
 {
 	if (!_Player.IsAlive())
@@ -169,10 +147,8 @@ void Level::Draw(SDL_Renderer* renderer)
 	_Grid.DrawTiles(renderer, &textTiles, &Camera);
 	_EnemyManager.Draw(renderer, &texEnemy, &Camera);
 	_SpawnManager.Draw(renderer, &textTiles, &Camera);
-	_DroppedObjectManager.Draw(renderer, &textTiles, &Camera);
 	_SolidObjectManager.Draw(renderer, &textTiles, &Camera);
 	_Player.Draw(renderer, &texPlayer, &Camera);
-	_Player.DrawInventory(renderer, &texMenu, &Camera);
 	_Boss.Draw(renderer, &texEnemy, &Camera);
 	_DialogBox.Draw(renderer, &texMenu, &Camera);
 	_HUD.Draw(renderer);
@@ -193,25 +169,6 @@ void Level::SetCamera()
 }
 #pragma endregion
 
-#pragma region Items
-void Level::DropItem(SDL_Point* dropPoint)
-{
-	if (dropPoint != nullptr)
-	{
-		SDL_Rect itemLocation;
-		itemLocation.x = dropPoint->x;
-		itemLocation.y = dropPoint->y;
-		_DroppedObjectManager.AddDroppedObject(itemLocation, DroppedObjectType::Item);
-	}
-}
-void Level::PickUpItem()
-{
-	InventoryItem item = _LootTable.GetRandomItem();
-	item.SetStats(CurrentLevel);
-	_Player.PickUpItem(&item);
-}
-#pragma endregion
-
 #pragma region Level
 void Level::PauseLevel()
 {
@@ -227,28 +184,14 @@ void Level::Reset(SDL_Renderer* renderer)
 	_EnemyManager.Reset();
 	_SpawnManager.Reset();
 	_Grid._DoorManager.ResetDoors();
-	_DroppedObjectManager.Reset();
-
 }
 void Level::CheckCollisionResults(SDL_Renderer* renderer, CollisionFlags flags)
 {
-	//Check the collision flag results to determine if an item should drop, player gets hit
-
-	if (flags.ProjectileHit)
-	{
-		DropItem(_EnemyManager.GetLastItemDropLocation());
-	}
+	//Check the collision flag results to determine if player gets hit
 	if (flags.HitPlayer)
 	{
 		_Player.IncrementHitPoints(-flags.HitPlayerDamage);
 		_HUD.UpdatePlayerHitPoints(renderer, _Player.GetHitPoints());
-	}
-
-	auto type = _DroppedObjectManager.CheckCollision(_Player.GetLocation());
-
-	if (type != DroppedObjectType::None)
-	{
-		PickUpItem();
 	}
 }
 #pragma endregion 
@@ -301,25 +244,9 @@ std::vector<SDL_Rect> Level::GetAllSolids()
 	}
 	return solids;
 }
-void Level::TogglePlayerInventory(SDL_Renderer* renderer)
-{
-	if (_Player.IsAlive() && LevelState != LevelState::Paused)
-	{
-		_Player.ToggleInventory(renderer, &Camera);
-		if (_Player.IsInventoryShowing())
-			LevelState = LevelState::ActiveInventory;
-		else
-			LevelState = LevelState::Active;
-	}
-}
 void Level::PlayerInput(SDL_Event* e, SDL_Renderer* renderer)
 {
 	SDL_Keycode keyPressed = e->key.keysym.sym;
-
-	if (e->type == SDL_KEYDOWN && keyPressed == SDLK_i && e->key.repeat == 0)
-	{
-		TogglePlayerInventory(renderer);
-	}
 
 	if (e->type == SDL_KEYDOWN && keyPressed == SDLK_ESCAPE && e->key.repeat == 0)
 	{
@@ -335,11 +262,6 @@ void Level::PlayerInput(SDL_Event* e, SDL_Renderer* renderer)
 
 		printf("Location %d,%d \n", loc->x, loc->y);
 		printf("Tile Location %d,%d \n", tile.x, tile.y);
-	}
-
-	if (_Player.IsInventoryShowing())
-	{
-		_Player.PlayerInventoryInput(renderer, e);
 	}
 }
 #pragma endregion 

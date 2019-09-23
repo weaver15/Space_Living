@@ -47,14 +47,10 @@ public:
 
 	void Update(SDL_Rect* playerLocation, vector<SDL_Rect> solids);
 	void Reset();
-	bool DropItem();
-
 	const int GetId();
-
 	void SetCurrentState(EnemyState state);
 	void SetDestination(SDL_Point dest);
 	void SetPath(queue<SDL_Point> path);
-
 	Timer SearchTimer;
 
 private:
@@ -68,7 +64,6 @@ private:
 	SDL_Point Destination;
 
 	int Id;
-	int DropItemChance = 25;
 	int ParentSpawn;
 	bool IsMovingToDestination = false;
 	int SearchWaitTime = 500;
@@ -88,8 +83,6 @@ public:
 	void Draw(SDL_Renderer* renderer, Texture* texture, SDL_Rect * camera);
 	void AddEnemy(EnemyDetails details);
 	void RemoveEnemy(int index);
-	SDL_Point* GetLastItemDropLocation();
-	int GetDeadEnemiesEnergy();
 	queue<SDL_Point> AdjustPath(SDL_Rect* location, std::vector<SDL_Point>* path, Grid* grid);
 	void Reset();
 
@@ -105,7 +98,6 @@ private:
 
 	int NumberOfEnemies;
 	int AliveEnemies;
-	SDL_Point LastItemDrop;
 
 	int FirstDeadEnemy();
 	void UpdatePlayerHit(int index, CollisionFlags* collisionFlag);

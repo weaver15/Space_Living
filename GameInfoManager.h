@@ -34,10 +34,7 @@ public:
 	void GameInfoManager::LoadDialogBoxInformation(FontDialogBox* font);
 	void LoadSolidObjects(SolidObjectManager* manager);
 	void LoadDoorInformation(DoorManager* doorManager);
-	void LoadInventoryInformation(Player* player);
-	void LoadLootTableInformation(LootTable* lootTable);
 	void LoadProjectileInformation(Player* player, Boss* boss);
-	void LoadItemInformation(DroppedObjectManager* manager);
 	void LoadEnemyInformation(EnemyManager* enemyManager, SpawnPointManager* spawnManager);
 	void LoadGrid(Grid* grid);
 	//Saving

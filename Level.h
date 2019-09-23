@@ -21,7 +21,6 @@ public:
 	void Draw(SDL_Renderer* renderer);
 	bool Load(SDL_Renderer* renderer);
 	bool LoadMedia(SDL_Renderer* renderer, SDL_Window* gWindow);
-	void TogglePlayerInventory(SDL_Renderer* renderer);
 	void PlayerInput(SDL_Event* e, SDL_Renderer* renderer);
 	bool IsLoaded() const { return LoadingFinished; }
 
@@ -50,7 +49,6 @@ private:
 	EnemyManager _EnemyManager;
 	Boss _Boss; 
 	SpawnPointManager _SpawnManager;
-	DroppedObjectManager _DroppedObjectManager;
 	SolidObjectManager _SolidObjectManager; 
 	LootTable _LootTable; 
 	HUD _HUD;
@@ -63,8 +61,6 @@ private:
 	void LoadLevel();
 	void Reset(SDL_Renderer* renderer);
 	void PauseLevel();
-	void DropItem(SDL_Point* dropPoint);
-	void PickUpItem();
 	void SetCamera();
 	void CheckCollisionResults(SDL_Renderer* renderer, CollisionFlags flags);
 	void CheckToStartSpawning();
@@ -73,7 +69,6 @@ private:
 	void ActivateBoss();
 	void InitTest();
 	void UpdateEnemies(SDL_Renderer* renderer);
-	void UpdateDisplays(SDL_Renderer* renderer);
 	void UpdateGameState(SDL_Renderer* renderer, GameState* gameState);
 	std::vector<SDL_Rect> GetSolids();
 	std::vector<SDL_Rect> GetAllSolids();
