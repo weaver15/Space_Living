@@ -75,7 +75,7 @@ private:
 
 	//Test
 	bool bCheckCollision = true;
-	bool bSpawnEnemies = true;
+	bool bSpawnEnemies = false;
 	Enemy _TestEnemy;
 };
 
