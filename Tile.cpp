@@ -1,7 +1,4 @@
 #include "Tile.h"
-
-
-
 Tile::Tile()
 {
 }
@@ -30,101 +27,101 @@ void Tile::Draw(SDL_Renderer* renderer, Texture* texture, SDL_Rect* camera)
 
 void Tile::SetWalls()
 {
-
+	SDL_Rect location = *GetLocation();
 	if (WallLocation == WallLocation::WallLocation_Left)
 	{
-		SDL_Rect wall = *GetLocation();
-		wall.w -= 145;
-		vecWalls.push_back(wall);
+		vecWalls.push_back(GetLeftWall(location));
 	}
 	else if (WallLocation == WallLocation::WallLocation_Right)
 	{
-		SDL_Rect wall = *GetLocation();
-		wall.w -= 145;
-		wall.x += 145; 
-		vecWalls.push_back(wall);
+		vecWalls.push_back(GetRightWall(location));
 	}
 	else if (WallLocation == WallLocation::WallLocation_Top)
 	{
-		SDL_Rect wall = *GetLocation();
-		wall.h -= 145;
-		vecWalls.push_back(wall);
+		vecWalls.push_back(GetTopWall(location));
 	}
 	else if (WallLocation == WallLocation::WallLocation_Bottom)
 	{
-		SDL_Rect wall = *GetLocation();
-		wall.h -= 145;
-		wall.y += 145;
-		vecWalls.push_back(wall);
+		vecWalls.push_back(GetBottomWall(location));
 	}
 	else if (WallLocation == WallLocation::WallLocation_TopRight)
 	{
-		SDL_Rect top = *GetLocation();
-		top.h -= 145;
-		vecWalls.push_back(top);
-
-		SDL_Rect right = *GetLocation();
-		right.w -= 145;
-		right.x += 145;
-		vecWalls.push_back(right);
-
+		vecWalls.push_back(GetTopWall(location));
+		vecWalls.push_back(GetRightWall(location));
 	}
 	else if (WallLocation == WallLocation::WallLocation_BottomRight)
 	{
-		SDL_Rect bottom = *GetLocation();
-		bottom.h -= 145;
-		bottom.y += 145;
-		vecWalls.push_back(bottom);
-
-		SDL_Rect right = *GetLocation();
-		right.w -= 145;
-		right.x += 145;
-		vecWalls.push_back(right);
-
+		vecWalls.push_back(GetBottomWall(location));
+		vecWalls.push_back(GetRightWall(location));
 	}
 	else if (WallLocation == WallLocation::WallLocation_BottomLeft)
 	{
-		SDL_Rect bottom = *GetLocation();
-		bottom.h -= 145;
-		bottom.y += 145;
-		vecWalls.push_back(bottom);
-
-		SDL_Rect left = *GetLocation();
-		left.w -= 145;
-		vecWalls.push_back(left);
+		vecWalls.push_back(GetBottomWall(location));
+		vecWalls.push_back(GetLeftWall(location));
 	}
 	else if (WallLocation == WallLocation::WallLocation_TopLeft)
 	{
-		SDL_Rect top = *GetLocation();
-		top.h -= 145;
-		vecWalls.push_back(top);
-
-		SDL_Rect left = *GetLocation();
-		left.w -= 145;
-		vecWalls.push_back(left);
+		vecWalls.push_back(GetTopWall(location));
+		vecWalls.push_back(GetLeftWall(location));
 	}
 	else if (WallLocation == WallLocation::WallLocation_TopBottom)
 	{
-		SDL_Rect top = *GetLocation();
-		top.h -= 145;
-		vecWalls.push_back(top);
-
-		SDL_Rect bottom = *GetLocation();
-		bottom.h -= 145;
-		bottom.y += 145;
-		vecWalls.push_back(bottom);
+		vecWalls.push_back(GetTopWall(location));
+		vecWalls.push_back(GetBottomWall(location));
 	}
 	else if (WallLocation == WallLocation::WallLocation_LeftRight)
 	{
-		SDL_Rect left = *GetLocation();
-		left.w -= 145;
-		vecWalls.push_back(left);
-
-		SDL_Rect right = *GetLocation();
-		right.w -= 145;
-		right.x += 145;
-		vecWalls.push_back(right);
+		vecWalls.push_back(GetLeftWall(location));
+		vecWalls.push_back(GetRightWall(location));
 	}
+
+	else if (WallLocation == WallLocation::WallLocation_LeftRightBottom)
+	{
+		vecWalls.push_back(GetLeftWall(location));
+		vecWalls.push_back(GetRightWall(location));
+		vecWalls.push_back(GetBottomWall(location));
+	}
+	else if (WallLocation == WallLocation::WallLocation_LeftRightTop)
+	{
+		vecWalls.push_back(GetLeftWall(location));
+		vecWalls.push_back(GetRightWall(location));
+		vecWalls.push_back(GetTopWall(location));
+	}
+	else if (WallLocation == WallLocation::WallLocation_RightTopBottom)
+	{
+		vecWalls.push_back(GetRightWall(location));
+		vecWalls.push_back(GetTopWall(location));
+		vecWalls.push_back(GetBottomWall(location));
+	}
+	else if (WallLocation == WallLocation::WallLocation_LeftTopBottom)
+	{
+		vecWalls.push_back(GetLeftWall(location));
+		vecWalls.push_back(GetTopWall(location));
+		vecWalls.push_back(GetBottomWall(location));
+	}
+}
+
+SDL_Rect Tile::GetLeftWall(SDL_Rect location)
+{
+	location.w -= 145;
+	return location;
+}
+SDL_Rect Tile::GetRightWall(SDL_Rect location)
+{
+	location.w -= 145;
+	location.x += 145;
+	return location;
+}
+SDL_Rect Tile::GetTopWall(SDL_Rect location)
+{
+	location.h -= 145;
+	return location;
+}
+SDL_Rect Tile::GetBottomWall(SDL_Rect location)
+{
+	location.h -= 145;
+	location.y += 145;
+	return location;
 }
 
 SDL_Point Tile::GetTileLocation()

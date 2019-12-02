@@ -16,8 +16,8 @@ ScreenManager _ScreenManager;
 bool Quit = false;
 Timer FPS_Timer;
 
-GameState CurrentGameState = GameState::Screen;
-//GameState CurrentGameState = GameState::Active_Level;
+//GameState CurrentGameState = GameState::Screen;
+GameState CurrentGameState = GameState::Active_Level;
 
 bool playBGMusic = false;
 Mix_Music* gMusic = NULL;

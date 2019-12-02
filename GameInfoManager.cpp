@@ -134,7 +134,7 @@ void GameInfoManager::LoadGrid(Grid* grid)
 		loc.x = x;
 		loc.y = y;
 		details.TileWalls = (WallLocation)vecTileType[i];
-		details.TextureLocation = vecTileTextureLocations[vecTileType[i]];
+		details.TextureLocation = vecTileTextureLocations[vecTileType[i]-1];
 		details.TileLocation = loc;
 		details.GridLoc = { grid_x, grid_y };
 		details.TileType = vecTileType[i];
