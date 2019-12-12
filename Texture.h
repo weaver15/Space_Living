@@ -19,7 +19,7 @@ public:
 	bool LoadFromRenderedText(SDL_Renderer* renderer, std::string textureText, SDL_Color textColor);
 	bool LoadFont(SDL_Renderer* renderer);
 	void InitTexture(SDL_Renderer* renderer, SDL_Window* gWindow, std::string fileName);
-	void Render(int x, int y, SDL_Renderer* renderer, SDL_Rect* clip = NULL, double angle = 0.0, SDL_Point* center = NULL, SDL_RendererFlip flip = SDL_FLIP_NONE, std::string tag = NULL);
+	void Render(int x, int y, SDL_Renderer* renderer, SDL_Rect* clip = NULL, double angle = 0.0, SDL_Point* center = NULL, SDL_RendererFlip flip = SDL_FLIP_NONE, std::string tag = NULL, double scale = 1.0);
 	//void SetTextureName(std::string name);
 	void SetTexture(SDL_Texture* texture);
 	void SetSize(int width, int height);

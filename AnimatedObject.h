@@ -28,7 +28,7 @@ public:
 	virtual void ChangeTextureLocation(SDL_Rect rect);
 	virtual bool CheckCollision(SDL_Rect* rect) const;
 	virtual bool CheckCollision(std::vector<SDL_Rect> solids) const;
-	virtual void Draw(SDL_Renderer* renderer, Texture* texture, SDL_Rect * camera, double rotation = 0);
+	virtual void Draw(SDL_Renderer* renderer, Texture* texture, SDL_Rect * camera, double rotation = 0, double scale = 1);
 	virtual void Draw(int x, int y, SDL_Renderer* renderer, SDL_Texture* texture = NULL, double rotation = 0);
 	virtual SDL_Rect* GetLocation();
 	virtual std::string GetTag() const;	

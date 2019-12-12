@@ -28,7 +28,7 @@ Player::~Player()
 void Player::Draw(SDL_Renderer* renderer, Texture* texture, SDL_Rect * camera)
 {
 	Projectiles.Draw(renderer, texture, camera);
-	AnimatedObject::Draw(renderer, texture, camera, Rotation);
+	AnimatedObject::Draw(renderer, texture, camera, Rotation, 1);
 }
 
 

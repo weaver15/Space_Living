@@ -26,7 +26,7 @@ AnimatedObject::~AnimatedObject()
 
 #pragma region Draw
 
-inline void AnimatedObject::Draw(SDL_Renderer* renderer, Texture* texture, SDL_Rect * camera, double rotation)
+inline void AnimatedObject::Draw(SDL_Renderer* renderer, Texture* texture, SDL_Rect * camera, double rotation, double scale)
 {
 	//Draw for player
 	if (Alive)
@@ -36,7 +36,7 @@ inline void AnimatedObject::Draw(SDL_Renderer* renderer, Texture* texture, SDL_R
 		currentClip->h = TextureInformation.h;
 		currentClip->x = TextureInformation.x + (Location.w * (int)(CurrentRowCol.x / TotalRowCol.x));
 		currentClip->y = TextureInformation.y + (Location.h * CurrentRowCol.y);
-		texture->Render(Location.x - camera->x, Location.y - camera->y, renderer, currentClip, rotation, NULL, SDL_FLIP_NONE, Tag);
+		texture->Render(Location.x - camera->x, Location.y - camera->y, renderer, currentClip, rotation, NULL, SDL_FLIP_NONE, Tag, scale);
 	}
 }
 

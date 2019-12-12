@@ -62,7 +62,7 @@ void Texture::SetTexture(SDL_Texture* texture)
 }
 
 
-void Texture::Render(int x, int y, SDL_Renderer* renderer, SDL_Rect* clip, double angle, SDL_Point* center, SDL_RendererFlip flip, std::string tag)
+void Texture::Render(int x, int y, SDL_Renderer* renderer, SDL_Rect* clip, double angle, SDL_Point* center, SDL_RendererFlip flip, std::string tag, double scale)
 {
 	SDL_Rect renderQuad = { x, y,0, 0};
 
@@ -80,9 +80,12 @@ void Texture::Render(int x, int y, SDL_Renderer* renderer, SDL_Rect* clip, doubl
 
 	if (ModifiedSize != NULL)
 	{
-		renderQuad.h = ModifiedSize->y;
 		renderQuad.w = ModifiedSize->x;
+		renderQuad.h = ModifiedSize->y;
 	}
+
+	renderQuad.w = renderQuad.w * scale;
+	renderQuad.h = renderQuad.h * scale;
 
 	SDL_RenderCopyEx(renderer, _Texture, clip, &renderQuad, angle, center, flip);
 }
