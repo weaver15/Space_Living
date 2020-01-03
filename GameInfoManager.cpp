@@ -418,8 +418,10 @@ void GameInfoManager::LoadEnemyInformation(EnemyManager* enemyManager, SpawnPoin
 	*(spawnManager) = SpawnPointManager(numberOfSpawns);
 	for each (pugi::xml_node node in spawnLocationInfo.children("Spawn"))
 	{
-		int x = node.attribute("x").as_int();
-		int y = node.attribute("y").as_int();
+		//int x = node.attribute("x").as_int();
+		//int y = node.attribute("y").as_int();
+		int x = (node.attribute("x").as_int() - 1) * TileSize;
+		int y = node.attribute("y").as_int() * TileSize;
 		int width = spawnTextureInformation.w;
 		int height = spawnTextureInformation.h;
 		int rate = node.attribute("rate").as_int();

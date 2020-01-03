@@ -263,6 +263,12 @@ void Level::PlayerInput(SDL_Event* e, SDL_Renderer* renderer)
 		printf("Location %d,%d \n", loc->x, loc->y);
 		printf("Tile Location %d,%d \n", tile.x, tile.y);
 	}
+
+	if (e->type == SDL_KEYDOWN && keyPressed == SDLK_e && e->key.repeat == 0)
+	{
+		_Grid._DoorManager.OpenDoor(_Player.GetLocation());
+	}
+
 }
 #pragma endregion 
 

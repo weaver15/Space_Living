@@ -15,7 +15,7 @@ public:
 
 	SDL_Rect InteractionArea;
 	bool IsOpen = false;
-	int OpenCost = 1;
+	int OpenCost = 0;
 	bool IsVertical; 
 	bool IsBossDoor; 
 	int Id; 
@@ -38,7 +38,7 @@ public:
 	Door GetDoor(int index);
 	void ResetDoors(); 
 	std::vector<SDL_Rect*> GetDoorLocations();
-
+	void OpenDoor(SDL_Rect* dimensions);
 private:
 	int NumberOfDoors = 0;
 	std::vector<Door> Doors;

@@ -1,2 +1,20 @@
-﻿  Player.cpp
+﻿  Door.cpp
+  Enums.cpp
+  Globals.cpp
+  Level.cpp
+D:\Projects\Space_Living\Space_Living\Level.cpp(25,51): warning C4474: 'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(25,51): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(32,45): warning C4474: 'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(32,45): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(29,13): warning C4101: 'n': unreferenced local variable
+D:\Projects\Space_Living\Space_Living\Level.cpp(42,43): warning C4474: 'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(42,43): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(65,38): warning C4474: 'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(65,38): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(88,48): warning C4474: 'printf' : too many arguments passed for format string
+D:\Projects\Space_Living\Space_Living\Level.cpp(88,48): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+D:\Projects\Space_Living\Space_Living\Level.cpp(111,13): warning C4101: 'i': unreferenced local variable
+D:\Projects\Space_Living\Space_Living\Level.cpp(313,13): warning C4101: 'i': unreferenced local variable
+  Player.cpp
+  Generating Code...
   Space_Living.vcxproj -> D:\Projects\Space_Living\Debug\Space_Living.exe

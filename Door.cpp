@@ -87,6 +87,17 @@ bool DoorManager::CheckCollision(SDL_Rect* dimensions, int index)
 		return false;
 }
 
+void DoorManager::OpenDoor(SDL_Rect* dimensions)
+{
+	int index = CheckCollision(dimensions);
+	if (index >= 0)
+	{
+		if (Doors[index].IsVertical)
+			Doors[index].OpenDoor(&OpenDoorVerticalTextureLocation);
+		else
+			Doors[index].OpenDoor(&OpenDoorHorizontalTextureLocation);
+	}
+}
 
 std::vector<Door> DoorManager::GetDoors()
 {
