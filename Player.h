@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <string>
 #include "Door.h"
-#include "Inventory.h"
 #include "Globals.cpp"
 #include "Character.h"
 

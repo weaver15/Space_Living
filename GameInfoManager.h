@@ -3,7 +3,6 @@
 #include <SDL.h>
 #include <sstream>
 #include <vector>
-
 #include "Tile.h"
 #include "Boss.h"
 #include "Enemy.h"
@@ -11,8 +10,8 @@
 #include "Door.h"
 #include "SpawnPoint.h"
 #include "DroppedObject.h"
-#include "LootTable.h"
 #include "Player.h"
+#include "FontDialogBox.h"
 
 
 //Manager for Loading and Saving information to outside xml

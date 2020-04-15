@@ -116,7 +116,7 @@
 		<Spawns>
 			<SpawnTexture height ="12" width="12" x ="175" y="547"/>
 			<Locations count = "1">
-				<Spawn x="7" y="7" rate ="1000" DoorId = "0"/>
+				<Spawn x="2" y="2" rate ="1000"/>
 			</Locations>
 		</Spawns>
 	</EnemyInfo>

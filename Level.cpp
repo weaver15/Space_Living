@@ -19,7 +19,6 @@ bool Level::Load(SDL_Renderer* renderer)
 	{
 		LoadLevel();
 		LevelState = LevelState::Active;
-		//_DialogBox.InitializeFont(renderer, 22, FontDialogBoxTag::DoorCost);
 		LevelTimer.Start();
 #ifdef _DEBUG
 		printf("Level 1 Load Successful\n", SDL_GetError());

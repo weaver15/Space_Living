@@ -50,7 +50,6 @@ private:
 	Boss _Boss; 
 	SpawnPointManager _SpawnManager;
 	SolidObjectManager _SolidObjectManager; 
-	LootTable _LootTable; 
 	HUD _HUD;
 	Timer LevelTimer;
 	FontDialogBox _DialogBox; 
@@ -75,7 +74,7 @@ private:
 
 	//Test
 	bool bCheckCollision = true;
-	bool bSpawnEnemies = false;
+	bool bSpawnEnemies = true;
 	Enemy _TestEnemy;
 };
 

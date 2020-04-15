@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\Inventory">
-      <UniqueIdentifier>{94303cf5-1046-4f52-a35d-0c38e3eefbac}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Level">
       <UniqueIdentifier>{291279ff-3692-4ab2-811e-cb76c59910ab}</UniqueIdentifier>
     </Filter>
@@ -30,9 +27,6 @@
     </Filter>
     <Filter Include="Header Files\Player">
       <UniqueIdentifier>{f285e322-2356-4fef-b622-7e29fdb21f52}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Inventory">
-      <UniqueIdentifier>{6c416cf3-eb54-48a9-ac76-ce5fc7fb4ca7}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Level">
       <UniqueIdentifier>{24c12c46-fb6f-4b99-9a4b-8a4019b6fddd}</UniqueIdentifier>
@@ -68,15 +62,6 @@
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Inventory.cpp">
-      <Filter>Source Files\Inventory</Filter>
-    </ClCompile>
-    <ClCompile Include="InventoryItem.cpp">
-      <Filter>Source Files\Inventory</Filter>
-    </ClCompile>
-    <ClCompile Include="MenuSelector.cpp">
-      <Filter>Source Files\Inventory</Filter>
     </ClCompile>
     <ClCompile Include="AnimatedObject.cpp">
       <Filter>Source Files\BaseObject</Filter>
@@ -114,9 +99,6 @@
     <ClCompile Include="Door.cpp">
       <Filter>Source Files\Level</Filter>
     </ClCompile>
-    <ClCompile Include="LootTable.cpp">
-      <Filter>Source Files\Inventory</Filter>
-    </ClCompile>
     <ClCompile Include="ErrorManager.cpp">
       <Filter>Source Files\Tools</Filter>
     </ClCompile>
@@ -153,9 +135,6 @@
     <ClCompile Include="Grid.cpp">
       <Filter>Source Files\Level</Filter>
     </ClCompile>
-    <ClCompile Include="EquipInventory.cpp">
-      <Filter>Source Files\Inventory</Filter>
-    </ClCompile>
     <ClCompile Include="GameInfoManager.cpp">
       <Filter>Source Files\Tools</Filter>
     </ClCompile>
@@ -165,17 +144,11 @@
     <ClCompile Include="Controller.cpp">
       <Filter>Source Files\Player</Filter>
     </ClCompile>
+    <ClCompile Include="MenuSelector.cpp">
+      <Filter>Source Files\BaseObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Inventory.h">
-      <Filter>Header Files\Inventory</Filter>
-    </ClInclude>
-    <ClInclude Include="InventoryItem.h">
-      <Filter>Header Files\Inventory</Filter>
-    </ClInclude>
-    <ClInclude Include="MenuSelector.h">
-      <Filter>Header Files\Inventory</Filter>
-    </ClInclude>
     <ClInclude Include="DroppedObject.h">
       <Filter>Header Files\Level</Filter>
     </ClInclude>
@@ -209,9 +182,6 @@
     <ClInclude Include="Door.h">
       <Filter>Header Files\Level</Filter>
     </ClInclude>
-    <ClInclude Include="LootTable.h">
-      <Filter>Header Files\Inventory</Filter>
-    </ClInclude>
     <ClInclude Include="ErrorManager.h">
       <Filter>Header Files\Tools</Filter>
     </ClInclude>
@@ -226,9 +196,6 @@
     </ClInclude>
     <ClInclude Include="FontDialogBox.h">
       <Filter>Header Files\BaseObject</Filter>
-    </ClInclude>
-    <ClInclude Include="EquipInventory.h">
-      <Filter>Header Files\Inventory</Filter>
     </ClInclude>
     <ClInclude Include="Tile.h">
       <Filter>Header Files\Level</Filter>
@@ -256,6 +223,9 @@
     </ClInclude>
     <ClInclude Include="Controller.h">
       <Filter>Header Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuSelector.h">
+      <Filter>Header Files\BaseObject</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
